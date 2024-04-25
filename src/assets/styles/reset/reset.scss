@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+
+  &:visited {
+    text-decoration: none;
+    font: inherit;
+    color: inherit;
+  }
+}
+
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+input {
+  border: none;
+  background-image: none;
+  background-color: transparent;
+  box-shadow: none;
+  color: inherit;
+  font: inherit;
+}
+
+img {
+  padding: 0;
+  margin: 0;
+}

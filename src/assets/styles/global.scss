@@ -1,0 +1,35 @@
+@import "./abstracts/mixins.scss";
+@import "./abstracts/variables.scss";
+@import "./reset/reset.scss";
+
+body {
+  width: 100vw;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: $light-font-weight;
+  color: $dark-grey-color;
+}
+
+.wrap {
+  width: 85%;
+  margin: 0 auto;
+}
+
+section {
+  position: relative;
+
+  padding: 132px 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 100px;
+    left: 50%;
+
+    width: 42px;
+    height: 8px;
+    background-color: $orange-color;
+  }
+}

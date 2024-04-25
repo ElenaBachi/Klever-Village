@@ -1,0 +1,48 @@
+.back-call {
+  * {
+    font-size: $text-font-size;
+    line-height: $text-line-height;
+    font-weight: $light-font-weight;
+  }
+
+  .back-call__wrap {
+    @include size(40%, 400px);
+    margin: 0 auto;
+    transform: translateX(-50%);
+    padding: $after-text-margin;
+
+    background-color: rgba(186, 205, 165, 0.4);
+  }
+
+  .back-call__title {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 30px;
+
+    font-size: 1.5625rem;
+    line-height: $title-font-size;
+  }
+
+  .back-call__form {
+    @include flex(column, flex-start, center);
+    gap: 30px;
+    @include size(100%, 100%);
+
+    input {
+      @include size(90%, 50px);
+      padding-left: 10px;
+
+      color: #8a9c76;
+
+      border-bottom: 1px solid #4f4738;
+
+      &:focus {
+        background-color: rgba(186, 205, 165, 0.5);
+      }
+    }
+
+    .back-call__btn {
+      margin-top: $after-text-margin;
+    }
+  }
+}

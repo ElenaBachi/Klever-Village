@@ -1,0 +1,17 @@
+.services__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5rem;
+
+  margin-bottom: 50px;
+
+  text-align: justify;
+
+  .services__list--img {
+    height: 70px;
+  }
+
+  .bathhouse__img {
+    margin-top: -10px;
+  }
+}

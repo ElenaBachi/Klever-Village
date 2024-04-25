@@ -1,0 +1,20 @@
+.book {
+  @include flex(row, center, center);
+  align-self: center;
+}
+
+.book__btn {
+  @include size($book-btn-width, $book-btn-height);
+
+  font-size: 1rem;
+  color: $khaki-color;
+
+  background-color: $white-color;
+  border: 1px solid $khaki-color;
+  border-radius: 10px;
+
+  &:hover {
+    transform: scale(0.95);
+    transition: all 0.4s ease;
+  }
+}

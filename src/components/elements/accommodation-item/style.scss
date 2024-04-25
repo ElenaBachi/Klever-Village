@@ -1,0 +1,51 @@
+.accommodation__item {
+  display: grid;
+  grid-template-columns: 1.8fr 1.2fr;
+  gap: 2.5rem;
+}
+
+.accommodation__galery {
+  @include size(100%, 400px);
+
+  img {
+    @include img(100%, 100%);
+
+    object-position: 0 40%;
+  }
+}
+
+.accommodation__content {
+  @include flex(column, space-between, flex-start);
+
+  h4 {
+    font-size: $title-font-size;
+    line-height: $title-font-size;
+  }
+
+  .description {
+    li:not(:last-child) {
+      padding-bottom: $after-text-margin;
+    }
+
+    li:before {
+      content: "– ";
+      padding-right: 5px;
+    }
+  }
+
+  .accommodation__price,
+  span {
+    font-size: 1.25rem;
+  }
+
+  .book {
+    width: 100%;
+    @include flex(row, flex-start, flex-start);
+
+    .book__btn {
+      background-color: $khaki-color;
+
+      color: $white-color;
+    }
+  }
+}
