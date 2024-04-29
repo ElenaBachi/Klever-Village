@@ -1,9 +1,11 @@
-.book {
+.book,
+.details {
   @include flex(row, center, center);
   align-self: center;
 }
 
-.book__btn {
+.book__btn,
+.details__btn {
   @include size($book-btn-width, $book-btn-height);
 
   font-size: 1rem;

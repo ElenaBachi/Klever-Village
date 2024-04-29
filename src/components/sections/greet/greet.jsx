@@ -1,6 +1,6 @@
 import React from "react";
-import Logo from "../../elements/logo/logo";
-import Form from "../../elements/book-form/book-form";
+import Logo from "../../elements/logo/Logo";
+import Form from "../../elements/book-form/Book-form";
 import "./style.scss";
 
 function Greet() {

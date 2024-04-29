@@ -1,5 +1,5 @@
 import React from "react";
-import Accomodation from "./containers/accommodation/accommodation";
+import Accomodation from "./containers/accommodation/Accommodation";
 
 import "./style.scss";
 
@@ -9,8 +9,8 @@ function Conditions() {
       <div className="wrap">
         <h2 class="conditions__title">Номерной фонд</h2>
         <h3>
-          Мы постарались , чтобы у вас было все необходимое <br /> для
-          комфортного проживания и отдыха
+          уютные коттеджи в современном скандинавском стиле <br /> вместимостью
+          2-6 человек
         </h3>
 
         <Accomodation />

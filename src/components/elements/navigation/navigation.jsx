@@ -1,4 +1,4 @@
-import Subnav from "../subnav/subnav";
+import Subnav from "../subnav/Subnav";
 import "./style.scss";
 
 function Navigation() {

@@ -1,22 +1,15 @@
 import "./style.scss";
 
-function ServicesItem() {
+function ServicesItem(props) {
+  const { title, imgSrc } = props;
+
   return (
-    <li>
-      <div className="services__list--img">
-        <img
-          src="/src/assets/images/house-icon-services.svg"
-          alt="Размещение в домах"
-        />
+    <li className="services__item">
+      <div className="services__img">
+        <img src={imgSrc} alt={title} />
       </div>
 
-      <ul className="services__offer">
-        <li>Современные однокомнатные коттеджи с оборудованной кухней</li>
-        <li>
-          Имеется дополнительное спальное место «чердак» для детей до 12 лет
-        </li>
-        <li>Индивидуальная мангальная зона</li>
-      </ul>
+      <h3>{title}</h3>
     </li>
   );
 }

@@ -1,6 +1,6 @@
 import React from "react";
-import ServicesList from "./containers/services-list/services-list";
-import Button from "../../elements/book-button/book-button";
+import ServicesList from "./containers/services-list/Services-list";
+import Button from "../../elements/button/Button";
 
 import "./style.scss";
 
@@ -8,15 +8,8 @@ function Services() {
   return (
     <section className="services">
       <div className="wrap">
-        <h2 class="services__title">Мы предлагаем</h2>
-
-        <p class="services__text">
-          разнообразные возможности для комфортного проживания <br /> и
-          активного времяпрепровождения
-        </p>
-
+        <h2 class="services__title">Чем заняться</h2>
         <ServicesList />
-
         <Button />
       </div>
     </section>

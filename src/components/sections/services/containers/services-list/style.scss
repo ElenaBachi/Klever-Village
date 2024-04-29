@@ -1,17 +1,6 @@
 .services__list {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 5rem;
+  @include flex(row, space-between, center);
 
-  margin-bottom: 50px;
-
-  text-align: justify;
-
-  .services__list--img {
-    height: 70px;
-  }
-
-  .bathhouse__img {
-    margin-top: -10px;
-  }
+  width: 80%;
+  margin: 0 auto;
 }

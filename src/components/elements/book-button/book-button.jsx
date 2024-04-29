@@ -1,6 +1,6 @@
 import "./style.scss";
 
-function Button() {
+function BookButton() {
   return (
     <div className="book">
       <button className="book__btn">Забронировать</button>
@@ -8,4 +8,4 @@ function Button() {
   );
 }
 
-export default Button;
+export default BookButton;
