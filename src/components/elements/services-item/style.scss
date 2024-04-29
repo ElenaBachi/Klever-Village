@@ -1,0 +1,8 @@
+.services__offer {
+  list-style-image: url("/src/assets/images/check-icon.svg");
+  list-style-position: 3px 0 0 0;
+
+  li:not(:last-child) {
+    padding-bottom: 15px;
+  }
+}

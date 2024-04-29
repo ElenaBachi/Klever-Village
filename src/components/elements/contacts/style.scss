@@ -1,0 +1,19 @@
+.contacts {
+  @include flex(row, space-between, center);
+  gap: 2%;
+  @include size(12%, 100%);
+
+  & a {
+    &:hover svg {
+      transform: translateY(-1.5px);
+    }
+
+    &:hover path {
+      fill: #bacda5;
+    }
+  }
+
+  .instagram {
+    padding-right: 5px;
+  }
+}

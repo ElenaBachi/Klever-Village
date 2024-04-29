@@ -1,0 +1,15 @@
+.about__title {
+  margin-bottom: $after-text-margin;
+  font-size: $title-font-size;
+  line-height: $title-font-size;
+}
+
+.about__text {
+  margin-bottom: $after-text-margin;
+  font-size: $text-font-size;
+  line-height: $text-line-height;
+}
+
+.about__content {
+  grid-column: 1/2;
+}

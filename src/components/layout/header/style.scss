@@ -1,0 +1,21 @@
+.header {
+  position: fixed;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+  height: 80px;
+
+  color: $white-color;
+  font-size: $text-font-size;
+
+  background-color: $khaki-color;
+
+  z-index: 1;
+
+  .wrap {
+    @include flex(row, space-between, center);
+  }
+}

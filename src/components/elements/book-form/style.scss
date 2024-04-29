@@ -1,0 +1,74 @@
+.book__form {
+  position: relative;
+  top: 20%;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  width: 90%;
+
+  font-size: $text-font-size;
+  color: $white-color;
+
+  div {
+    position: relative;
+
+    flex: 1 0 15%;
+    @include size(25%, 65px);
+
+    p {
+      position: absolute;
+      top: -8px;
+      left: 0;
+
+      padding: 0 0 0 15px;
+
+      color: $orange-color;
+      font-size: 0.85rem;
+    }
+
+    input {
+      @include size(100%, 100%);
+      padding: 10px 0 0 15px;
+
+      background-color: rgba($color: $dark-grey-color, $alpha: 0.75);
+    }
+  }
+
+  .date-from,
+  .date-to,
+  .guests-qty {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 12px;
+      @include size(23px, 25px);
+      transform: translateY(-50%);
+      background: url("/src/images/calendar.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  .guests-qty {
+    flex: 1 0 20%;
+
+    &::after {
+      background: url("/src/images/guest-icon.svg");
+    }
+  }
+
+  .book__btn {
+    @include size(100%, 100%);
+
+    background-color: rgba($color: $dark-grey-color, $alpha: 0.9);
+
+    color: $white-color;
+    font-size: 1.125rem;
+
+    border: none;
+    border-radius: 0;
+  }
+}

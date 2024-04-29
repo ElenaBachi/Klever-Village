@@ -1,0 +1,18 @@
+.about {
+  background-color: $white-color;
+
+  * {
+    font-weight: $light-font-weight;
+  }
+
+  .wrap {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  h3 {
+    margin-bottom: $after-text-margin;
+
+    color: #8a9c76;
+  }
+}

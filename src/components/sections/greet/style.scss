@@ -1,0 +1,40 @@
+.greet {
+  @include flex(column, flex-start, center);
+  @include size(60%, 100vh);
+
+  margin: 0 auto;
+  padding-top: 200px;
+
+  text-align: center;
+  color: #e5e2d0;
+  font-size: $greet-text-font-size;
+  line-height: $greet-text-font-size;
+  font-weight: inherit;
+
+  width: 100%;
+  background: url("/src/assets/images/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+
+  &::before {
+    content: none;
+  }
+
+  .greet__logo {
+    @include size(256px, 90px);
+
+    margin-bottom: 37px;
+  }
+
+  .greet__title {
+    margin-bottom: 20px;
+
+    font-weight: $light-font-weight;
+  }
+
+  .greet__text {
+    margin-bottom: 80px;
+  }
+}
