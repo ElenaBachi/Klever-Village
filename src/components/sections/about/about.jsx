@@ -1,7 +1,7 @@
 import React from "react";
 
-import AboutContent from "./containers/about-content/about-content";
-import AboutGalery from "./containers/about-gallery/about-gallery";
+import AboutContent from "./containers/about-content/About-content";
+import AboutGalery from "./containers/about-gallery/About-gallery";
 
 import "./style.scss";
 

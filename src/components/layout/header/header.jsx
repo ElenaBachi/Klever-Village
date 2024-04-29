@@ -1,9 +1,9 @@
 import React from "react";
 
-import Logo from "../../elements/logo/logo";
-import Navigation from "../../elements/navigation/navigation";
-import Contacts from "../../elements/contacts/contacts";
-import Button from "../../elements/book-button/book-button";
+import Logo from "../../elements/logo/Logo";
+import Navigation from "../../elements/navigation/Navigation";
+import Contacts from "../../elements/contacts/Contacts";
+import BookButton from "../../elements/book-button/Book-button";
 
 import "./style.scss";
 
@@ -14,7 +14,7 @@ function Header() {
         <Logo />
         <Navigation />
         <Contacts />
-        <Button />
+        <BookButton />
       </div>
     </header>
   );

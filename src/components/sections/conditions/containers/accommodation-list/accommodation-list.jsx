@@ -1,16 +1,13 @@
 import React from "react";
-import AccomodationItem from "../../../../elements/accommodation-item/accommodation-item";
-
+import { inventorys } from "../../../../../data";
 import "./style.scss";
+import AccommodationItem from "../../../../elements/accommodation-item/Accommodation-item";
 
 function AccomodationList() {
-  return (
-    <ul className="accommodation__list">
-      <AccomodationItem />
-      <AccomodationItem />
-      <AccomodationItem />
-    </ul>
-  );
+  const accommodationItems = inventorys.map((inventory) => {
+    return <AccommodationItem {...inventory} />;
+  });
+  return <ul className="accommodation__list">{accommodationItems}</ul>;
 }
 
 export default AccomodationList;

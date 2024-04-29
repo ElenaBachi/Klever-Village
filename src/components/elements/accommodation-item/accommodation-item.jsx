@@ -1,7 +1,27 @@
-import Button from "../book-button/book-button";
+import BookButton from "../book-button/Book-button";
 import "./style.scss";
 
-function AccommodationItem() {
+export default function AccommodationItem(props) {
+  const { name, title, description, options, accommodationOptions } = props;
+  const isSmall = name === "small house";
+  const optionsList = options.map((option) => {
+    return <li>{option}</li>;
+  });
+
+  const accommodationOptionsList =
+    accommodationOptions.length > 0
+      ? accommodationOptions.map((option) => {
+          return (
+            <li>
+              {option.bed}
+              <p className="accommodation__price">
+                <span>Стоимость {option.price} &#8381;</span> в сутки
+              </p>
+            </li>
+          );
+        })
+      : "";
+
   return (
     <li className="accommodation__item">
       <div className="accommodation__galery">
@@ -9,28 +29,29 @@ function AccommodationItem() {
       </div>
 
       <div className="accommodation__content">
-        <h4>Малый дом</h4>
+        <h4>{title}</h4>
+        <h3>{description}</h3>
 
-        <ul className="description">
-          <li>
-            просторные и функциональные интерьеры, обеспечивающие уют во время
-            Вашего пребывания
-          </li>
-          <li>современное оборудование и удобства для Вашего комфорта</li>
-          <li>
-            из окна открывается вид на живописные пейзажи, позволяя наслаждаться
-            красотой окружающей природы
-          </li>
-        </ul>
+        {isSmall ? (
+          <>
+            <p>{optionsList}</p>
+            <ul className="description">
+              Варианты размещения
+              {accommodationOptionsList}
+            </ul>
+          </>
+        ) : (
+          <>
+            <ul className="description">В домике есть: {optionsList}</ul>
+            <p className="accommodation__price">
+              <span>Стоимость {accommodationOptions.price} &#8381;</span> в
+              сутки
+            </p>
+          </>
+        )}
 
-        <p className="accommodation__price">
-          Стоимость от <span>6 000 &#8381;</span> в сутки
-        </p>
-
-        <Button />
+        <BookButton />
       </div>
     </li>
   );
 }
-
-export default AccommodationItem;

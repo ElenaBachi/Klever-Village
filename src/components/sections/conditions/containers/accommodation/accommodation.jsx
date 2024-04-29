@@ -1,11 +1,11 @@
 import React from "react";
-import AccomodationList from "../accommodation-list/accommodation-list";
+import AccomodationList from "../accommodation-list/Accommodation-list";
 
 import "./style.scss";
 
 function Accomodation() {
   return (
-    <div className="onditions__content accommodation">
+    <div className="conditions__content accommodation">
       <AccomodationList />
     </div>
   );

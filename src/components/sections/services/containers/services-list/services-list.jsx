@@ -1,16 +1,13 @@
 import React from "react";
-import ServicesItem from "../../../../elements/services-item/services-item";
-
+import ServicesItem from "../../../../elements/services-item/Services-item";
+import { servicesMainPage } from "../../../../../data";
 import "./style.scss";
 
 function ServicesList() {
-  return (
-    <ul className="services__list">
-      <ServicesItem />
-      <ServicesItem />
-      <ServicesItem />
-    </ul>
-  );
+  const services = servicesMainPage.map((service) => {
+    return <ServicesItem {...service} />;
+  });
+  return <ul className="services__list">{services}</ul>;
 }
 
 export default ServicesList;
