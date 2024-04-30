@@ -57,7 +57,7 @@ export const servicesMainPage = [
   },
   {
     title: "Баня на дровах",
-    imgSrc: "src/assets/images/firewood.jpeg",
+    imgSrc: "src/assets/images/bathhouse.jpg",
   },
   {
     title: "Детям",
