@@ -1,24 +1,27 @@
+import React, { useState } from "react";
+import NavigationItem from "../navigation-item/_Navigation-item";
+import { navigationItems } from "../../../data";
 import Subnav from "../subnav/_Subnav";
 import "./style.scss";
 
 function Navigation() {
+  const [isVisibleSubmenu, setIsVisibleSubmenu] = useState(false);
+  const toggleMenu = () => setIsVisibleSubmenu((isOpen) => !isOpen);
+
+  const navItemsList = navigationItems.map((item) => {
+    return <NavigationItem {...item} />;
+  });
+
   return (
     <nav className="main-nav">
-      <ul className="main-nav__list">
-        <li className="main-nav__item main-nav__item--about">
-          <a href="">о нас</a>
-          <Subnav />
-        </li>
-        <li className="main-nav__item">
-          <a href="">как нас найти</a>
-        </li>
-        <li className="main-nav__item">
-          <a href="">обратный звонок</a>
-        </li>
-        <li className="main-nav__item">
-          <a href="">FAQ</a>
-        </li>
+      <ul
+        className="main-nav__list"
+        onMouseEnter={toggleMenu}
+        onMouseUp={toggleMenu}
+      >
+        {navItemsList}
       </ul>
+      {isVisibleSubmenu && <Subnav />}
     </nav>
   );
 }

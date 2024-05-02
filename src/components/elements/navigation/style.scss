@@ -1,11 +1,14 @@
 .main-nav {
-  width: 45%;
+  width: 50%;
+
+  font-size: 0.75rem;
 }
 
 .main-nav__list {
   position: relative;
 
   @include flex(row, space-between, center);
+  gap: 10px;
 
   height: 100%;
 
@@ -15,17 +18,5 @@
 .main-nav__item {
   &:hover {
     color: #aea48a;
-  }
-}
-
-.main-nav__item--about {
-  position: relative;
-
-  &:hover {
-    .subnav {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-    }
   }
 }

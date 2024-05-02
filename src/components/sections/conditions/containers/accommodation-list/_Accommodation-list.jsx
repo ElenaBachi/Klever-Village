@@ -7,6 +7,7 @@ function AccomodationList() {
   const accommodationItems = inventorys.map((inventory) => {
     return <AccommodationItem {...inventory} />;
   });
+
   return <ul className="accommodation__list">{accommodationItems}</ul>;
 }
 

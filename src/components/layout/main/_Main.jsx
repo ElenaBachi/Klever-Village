@@ -2,10 +2,13 @@ import React from "react";
 import Greet from "../../sections/greet/_Greet";
 import About from "../../sections/about/_About";
 import Conditions from "../../sections/conditions/_Conditions";
-import Galery from "../../sections/galery/_Galery";
 import Services from "../../sections/services/_Services";
-import Map from "../../sections/map/_Map";
-import BackCall from "../../sections/back-call/_Back-call";
+import Rules from "../../sections/rules/_Rules";
+import Extras from "../../sections/extras/_Extras";
+import Galery from "../../sections/galery/_Galery";
+import Surroundings from "../../sections/surroundings/_Surroundings";
+// import Map from "../../sections/map/_Map";
+// import BackCall from "../../sections/back-call/_Back-call";
 
 import "./style.scss";
 
@@ -15,10 +18,13 @@ function Main() {
       <Greet />
       <About />
       <Conditions />
-      <Galery />
       <Services />
-      <Map />
-      <BackCall />
+      <Rules />
+      <Extras />
+      <Galery />
+      <Surroundings />
+      {/* <Map />
+      <BackCall /> */}
     </main>
   );
 }

@@ -7,7 +7,7 @@ import "./style.scss";
 
 function About() {
   return (
-    <section className="about">
+    <section className="about" id="about">
       <div className="wrap">
         <AboutContent />
         <AboutGalery />

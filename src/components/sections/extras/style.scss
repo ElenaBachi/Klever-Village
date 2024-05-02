@@ -1,20 +1,12 @@
-.conditions {
-  background-color: $beige-color;
-
+.extras {
   * {
     font-size: $text-font-size;
     line-height: $text-line-height;
     font-weight: $light-font-weight;
   }
 
-  .conditions__title {
+  .extras__title {
     font-size: $title-font-size;
     line-height: $title-font-size;
-  }
-
-  h3 {
-    margin-bottom: 30px;
-
-    color: #8a9c76;
   }
 }
