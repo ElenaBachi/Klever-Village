@@ -5,12 +5,12 @@ function Form() {
     <form action="" class="book__form">
       <div class="date-from">
         <p class="date-from__label">Заезд</p>
-        <input type="text" class="date-from__input" value="00.00.0000" />
+        <input type="date" class="date-from__input" value="" />
       </div>
 
       <div class="date-to">
         <p class="date-to__label">Выезд</p>
-        <input type="text" class="date-to__input" value="00.00.0000" />
+        <input type="date" class="date-to__input" value="" />
       </div>
 
       <div class="guests-qty">

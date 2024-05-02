@@ -6,7 +6,7 @@ import "./style.scss";
 
 function Services() {
   return (
-    <section className="services">
+    <section className="services" id="activities">
       <div className="wrap">
         <h2 class="services__title">Чем заняться</h2>
         <ServicesList />

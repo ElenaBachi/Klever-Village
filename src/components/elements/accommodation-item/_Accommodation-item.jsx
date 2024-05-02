@@ -15,7 +15,7 @@ export default function AccommodationItem(props) {
             <li>
               {option.bed}
               <p className="accommodation__price">
-                <span>Стоимость {option.price} &#8381;</span> в сутки
+                стоимость <span>{option.price} &#8381;</span> в сутки
               </p>
             </li>
           );
@@ -25,18 +25,18 @@ export default function AccommodationItem(props) {
   return (
     <li className="accommodation__item">
       <div className="accommodation__galery">
-        <img src="/src/assets/images/conditions-galery-1.jpg" alt="" />
+        <img src="src/assets/images/conditions-galery-1.jpg" alt="" />
       </div>
 
-      <div className="accommodation__content">
+      <div className="accommodation__content room">
         <h4>{title}</h4>
-        <h3>{description}</h3>
+        <p className="room__description">{description}</p>
 
         {isSmall ? (
           <>
-            <p>{optionsList}</p>
+            <p>Во всех домиках есть {optionsList}</p>
             <ul className="description">
-              Варианты размещения
+              Варианты размещения:
               {accommodationOptionsList}
             </ul>
           </>

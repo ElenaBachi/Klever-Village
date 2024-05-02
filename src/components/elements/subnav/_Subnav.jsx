@@ -1,15 +1,16 @@
+import { subnavItems } from "../../../data";
+import SubnavItem from "../subnav-item/_Subnav-item";
 import "./style.scss";
 
 function Subnav() {
+  const subnavList = subnavItems.map((item) => {
+    return <SubnavItem {...item} />;
+  });
+
   return (
-    <ul className="subnav">
-      <li className="main-nav__item">
-        <a href="">услуги</a>
-      </li>
-      <li className="main-nav__item">
-        <a href="">условия и стоимость {"\n"} проживания</a>
-      </li>
-    </ul>
+    <div className="subnav__container">
+      <ul className="subnav">{subnavList}</ul>
+    </div>
   );
 }
 

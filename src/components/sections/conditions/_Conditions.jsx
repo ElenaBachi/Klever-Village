@@ -5,7 +5,7 @@ import "./style.scss";
 
 function Conditions() {
   return (
-    <section className="conditions">
+    <section className="conditions" id="inventorys">
       <div className="wrap">
         <h2 class="conditions__title">Номерной фонд</h2>
         <h3>

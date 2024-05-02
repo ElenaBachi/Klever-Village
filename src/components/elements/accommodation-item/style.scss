@@ -5,7 +5,7 @@
 }
 
 .accommodation__galery {
-  @include size(100%, 400px);
+  @include size(100%, 450px);
 
   img {
     @include img(100%, 100%);
@@ -15,7 +15,9 @@
 }
 
 .accommodation__content {
-  @include flex(column, space-between, flex-start);
+  @include flex(column, flex-start, flex-start);
+
+  gap: $after-text-margin;
 
   h4 {
     font-size: $title-font-size;
@@ -24,7 +26,7 @@
 
   .description {
     li:not(:last-child) {
-      padding-bottom: $after-text-margin;
+      padding-bottom: 0.625rem;
     }
 
     li:before {
@@ -33,9 +35,13 @@
     }
   }
 
-  .accommodation__price,
-  span {
-    font-size: 1.25rem;
+  .accommodation__price {
+    padding: 8px 0 0 15px;
+
+    span {
+      font-weight: bolder;
+      font-size: 1.1rem;
+    }
   }
 
   .book {
@@ -43,6 +49,7 @@
     @include flex(row, flex-start, flex-start);
 
     .book__btn {
+      width: 100%;
       background-color: $khaki-color;
 
       color: $white-color;
