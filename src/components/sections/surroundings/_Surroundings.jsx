@@ -6,9 +6,9 @@ import "./style.scss";
 
 function Surroundings() {
   return (
-    <section className="extras" id="surroundings">
+    <section className="surroundings" id="surroundings">
       <div className="wrap">
-        <h2 class="extras__title">Окрестности</h2>
+        <h2 class="surroundings__title">Окрестности</h2>
 
         <SurroundingsList surroundings={surroundings} />
       </div>

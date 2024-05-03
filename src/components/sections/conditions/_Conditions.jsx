@@ -7,7 +7,7 @@ function Conditions() {
   return (
     <section className="conditions" id="inventorys">
       <div className="wrap">
-        <h2 class="conditions__title">Номерной фонд</h2>
+        <h2 className="conditions__title">Номерной фонд</h2>
         <h3>
           уютные коттеджи в современном скандинавском стиле <br /> вместимостью
           2-6 человек

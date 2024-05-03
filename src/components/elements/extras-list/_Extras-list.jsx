@@ -7,11 +7,11 @@ export default function ExtrasList({ extras }) {
 
   return (
     <ul className="accordion">
-      {extras.map((item, id) => {
+      {extras.map((extra, id) => {
         return (
           <ExtraItem
             onClick={() => (id === openId ? setId(null) : setId(id))}
-            item={item}
+            extra={extra}
             isOpen={id === openId}
             key={id}
           />
