@@ -1,29 +1,33 @@
+import moment from "moment";
 import "./style.scss";
 
 function Form() {
+  const currentDate = moment().format("YYYY-MM-DD");
+  const futureDay = moment().add("days", 1).format("YYYY-MM-DD");
+
   return (
-    <form action="" class="book__form">
-      <div class="date-from">
-        <p class="date-from__label">Заезд</p>
-        <input type="date" class="date-from__input" value="" />
+    <form action="" className="book__form">
+      <div className="date-from">
+        <p className="date-from__label">Заезд</p>
+        <input type="date" className="date-from__input" value={currentDate} />
       </div>
 
-      <div class="date-to">
-        <p class="date-to__label">Выезд</p>
-        <input type="date" class="date-to__input" value="" />
+      <div className="date-to">
+        <p className="date-to__label">Выезд</p>
+        <input type="date" className="date-to__input" value={futureDay} />
       </div>
 
-      <div class="guests-qty">
-        <p class="guests-qty__label">Количество гостей</p>
+      <div className="guests-qty">
+        <p className="guests-qty__label">Количество гостей</p>
         <input
           type="text"
-          class="guests-qty__input"
+          className="guests-qty__input"
           value="2 взрослых, 0 детей"
         />
       </div>
 
       <div>
-        <button class="book__btn">Найти номер</button>
+        <button className="book__btn">Найти номер</button>
       </div>
     </form>
   );

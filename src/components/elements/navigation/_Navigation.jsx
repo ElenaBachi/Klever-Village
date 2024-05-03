@@ -4,24 +4,15 @@ import { navigationItems } from "../../../data";
 import Subnav from "../subnav/_Subnav";
 import "./style.scss";
 
-function Navigation() {
-  const [isVisibleSubmenu, setIsVisibleSubmenu] = useState(false);
-  const toggleMenu = () => setIsVisibleSubmenu((isOpen) => !isOpen);
-
+function Navigation({ isOpen }) {
   const navItemsList = navigationItems.map((item) => {
     return <NavigationItem {...item} />;
   });
 
   return (
     <nav className="main-nav">
-      <ul
-        className="main-nav__list"
-        onMouseEnter={toggleMenu}
-        onMouseUp={toggleMenu}
-      >
-        {navItemsList}
-      </ul>
-      {isVisibleSubmenu && <Subnav />}
+      <ul className="main-nav__list">{navItemsList}</ul>
+      {isOpen && <Subnav />}
     </nav>
   );
 }

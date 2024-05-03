@@ -1,14 +1,12 @@
 import React from "react";
+import BigHouseSrc from "../../../../../assets/images/big-house.jpg";
 
 import "./style.scss";
 
 function AboutGalery() {
   return (
-    <div class="about__galery">
-      <img
-        src="/src/assets/images/conditions-galery-1.jpg"
-        alt="Размещение в малом доме"
-      />
+    <div className="about__galery">
+      <img src={BigHouseSrc} alt="Размещение в малом доме" />
     </div>
   );
 }

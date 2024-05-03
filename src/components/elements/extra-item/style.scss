@@ -11,6 +11,8 @@
 .accordion-header {
   padding: 15px;
   width: 100%;
+
+  box-shadow: rgba($color: $dark-grey-color, $alpha: 0.2) 0px 2px 8px;
 }
 
 .plus-icon {
@@ -18,8 +20,7 @@
   top: calc(25px / 2);
   right: 20px;
   display: block;
-  width: 25px;
-  height: 25px;
+  @include size(20px, 20px);
 
   transition: all 0.4s;
 }
@@ -29,7 +30,7 @@
 }
 
 .accordion-body {
-  padding: 20px 0 20px 15px;
+  padding: 30px 15px 20px 15px;
 }
 
 .accordion-collapse {
@@ -41,4 +42,17 @@
 
 .accordion-collapse.open {
   height: auto;
+}
+
+.extras-item {
+  @include flex(row, space-between, center);
+  width: 100%;
+
+  p {
+    margin-bottom: $after-text-margin;
+  }
+
+  span {
+    margin-right: 50px;
+  }
 }

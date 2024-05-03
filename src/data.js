@@ -1,3 +1,10 @@
+import SmallHouseSrc from "../src/assets/images/small-house.jpg";
+import MediumHouseSrc from "../src/assets/images/medium-house.jpg";
+import BigHouseSrc from "../src/assets/images/big-house.jpg";
+import BikeSrc from "../src/assets/images/quad-bike.jpeg";
+import BathhouseSrc from "../src/assets/images/bathhouse.jpg";
+import PlaygroundSrc from "../src/assets/images/playground.jpeg";
+
 export const navigationItems = [
   {
     name: "О НАС",
@@ -28,16 +35,15 @@ export const subnavItems = [
     name: "ПРАВИЛА ПРОЖИВАНИЯ",
     href: "#rules",
   },
-  { name: "КАК ДОБРАТЬСЯ" },
 ];
 
 export const inventorys = [
   {
-    name: "small house",
+    name: "small-house",
     title: "Малый дом",
     description:
       "На территории расположено 6 домов, которые комфортно размещают 2 взрослых + 1 ребенка до 12 лет (дополнительное спальное место на мансарде за дополнительную плату)",
-    options: ["оборудованная кухня со всем необходимым и санузел"],
+    options: ["оборудованная кухня со всем необходимым", "санузел"],
     accommodationOptions: [
       {
         bed: "двухспальный диван-кровать (4 дома)",
@@ -48,9 +54,10 @@ export const inventorys = [
         price: "7000",
       },
     ],
+    imgSrc: SmallHouseSrc,
   },
   {
-    name: "middle house",
+    name: "medium-house",
     title: "Средний дом",
     description:
       "На территории располагается один дом, который комфортно размещает до 4 человек",
@@ -63,9 +70,10 @@ export const inventorys = [
     accommodationOptions: {
       price: "8000",
     },
+    imgSrc: MediumHouseSrc,
   },
   {
-    name: "big house",
+    name: "big-house",
     title: "Большой дом ",
     description:
       "На территории располагается один большой двухэтажный дом, который комфортно размещает до 6 человек",
@@ -80,21 +88,22 @@ export const inventorys = [
       bed: "",
       price: "15 000",
     },
+    imgSrc: BigHouseSrc,
   },
 ];
 
 export const servicesMainPage = [
   {
     title: "Аренда квадроцикла",
-    imgSrc: "src/assets/images/quad-bike.jpeg",
+    imgSrc: BikeSrc,
   },
   {
     title: "Баня на дровах",
-    imgSrc: "src/assets/images/bathhouse.jpg",
+    imgSrc: BathhouseSrc,
   },
   {
     title: "Детям",
-    imgSrc: "src/assets/images/playground.jpeg",
+    imgSrc: PlaygroundSrc,
   },
 ];
 
@@ -112,29 +121,69 @@ export const rules = [
 export const extras = [
   {
     title: "Ранний заезд/поздний выезд",
-    description: 'Стоимость услуги "Ранний заезд/Поздний выезд" - 500₽.',
+    items: [
+      {
+        name: 'Услуга "Ранний заезд/Поздний выезд"',
+        price: "500 ₽",
+      },
+    ],
   },
   {
     title: "Спальное место",
-    description: "Дополнительное спальное место для ребенка 500₽/сутки.",
+    items: [
+      {
+        name: "Дополнительное спальное место для ребенка",
+        price: "500 ₽ / сутки",
+      },
+    ],
   },
   {
     title: "Баня на дровах",
-    description:
-      "Сеанс 2 часа - 5000₽ (каждый последующий час 2500₽). Дубовый веник - 250₽.",
+    items: [
+      {
+        name: "Минимальная продолжительность сеанса - 2 часа",
+        price: "5000 ₽",
+      },
+      {
+        name: "Каждый последующий час",
+        price: "2500 ₽",
+      },
+    ],
   },
   {
     title: "Проживание с животными",
-    description:
-      "Дополнительное плата за каждого животного - 1000₽/сутки  + залог 5000₽ (возвращается при выезде).",
+    items: [
+      {
+        name: "Дополнительное плата за каждого животного",
+        price: "1000 ₽ / сутки",
+      },
+      {
+        name: "Обязательный залог (возвращается при выезде)",
+        price: "5000 ₽",
+      },
+    ],
   },
   {
     title: "Квадроцикл",
-    description: "Аренда квадроцикла 2000₽/час.",
+    items: [
+      {
+        name: "Аренда квадроцикла",
+        price: "2000 ₽ / час",
+      },
+    ],
   },
   {
     title: "Принадлежности для мангала",
-    description: "Уголь 350₽, жидкость для розжига - 200₽.",
+    items: [
+      {
+        name: "Уголь",
+        price: "350 ₽",
+      },
+      {
+        name: "Жидкость для розжига",
+        price: "200 ₽",
+      },
+    ],
   },
 ];
 

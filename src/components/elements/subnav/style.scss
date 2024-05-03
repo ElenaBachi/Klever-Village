@@ -4,20 +4,20 @@
   left: 0;
   right: 0;
   width: 100vw;
-  min-height: 80px;
-  max-height: calc(100vh - 80px);
   overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
   z-index: 100;
   background-color: $khaki-color;
 }
 
 .subnav {
-  @include flex(row, space-between, center);
+  @include flex(row, flex-start, center);
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 10%;
 
-  width: 85%;
+  width: 68%;
   height: 80px;
   margin: 0 auto;
-  padding: 0 150px 0 160px;
+  //padding: 0 calc(128px + 2.5rem);
 }

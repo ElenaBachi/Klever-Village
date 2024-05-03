@@ -2,8 +2,10 @@ import BookButton from "../book-button/_Book-button";
 import "./style.scss";
 
 export default function AccommodationItem(props) {
-  const { name, title, description, options, accommodationOptions } = props;
-  const isSmall = name === "small house";
+  const { name, title, description, options, accommodationOptions, imgSrc } =
+    props;
+  const isSmall = name === "small-house";
+  const isMedium = name === "medium-house";
   const optionsList = options.map((option) => {
     return <li>{option}</li>;
   });
@@ -25,16 +27,28 @@ export default function AccommodationItem(props) {
   return (
     <li className="accommodation__item">
       <div className="accommodation__galery">
-        <img src="src/assets/images/conditions-galery-1.jpg" alt="" />
+        {isSmall ? (
+          <>
+            <img src={imgSrc} alt="" />
+          </>
+        ) : isMedium ? (
+          <>
+            <img src={imgSrc} alt="" />
+          </>
+        ) : (
+          <>
+            <img src={imgSrc} alt="" />
+          </>
+        )}
       </div>
 
       <div className="accommodation__content room">
         <h4>{title}</h4>
         <p className="room__description">{description}</p>
+        <ul className="description">В домике есть: {optionsList}</ul>
 
         {isSmall ? (
           <>
-            <p>Во всех домиках есть {optionsList}</p>
             <ul className="description">
               Варианты размещения:
               {accommodationOptionsList}
@@ -42,7 +56,6 @@ export default function AccommodationItem(props) {
           </>
         ) : (
           <>
-            <ul className="description">В домике есть: {optionsList}</ul>
             <p className="accommodation__price">
               <span>Стоимость {accommodationOptions.price} &#8381;</span> в
               сутки

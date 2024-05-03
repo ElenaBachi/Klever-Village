@@ -7,7 +7,7 @@ export default function SurroundingItem({ item, onClick, isOpen }) {
   const itemRef = useRef(null);
 
   return (
-    <li className="accordion-item">
+    <li className="accordion-item surrounding-item">
       <button className="accordion-header" onClick={() => onClick()}>
         {title}
         <br />
