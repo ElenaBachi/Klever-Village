@@ -15,6 +15,7 @@ function Header() {
       className={`header ${isOpen ? "active" : ""}`}
       onMouseOver={toggleMenu}
       onMouseOut={toggleMenu}
+      toggleMenu={toggleMenu}
     >
       <Logo />
       <Navigation isOpen={isOpen} />

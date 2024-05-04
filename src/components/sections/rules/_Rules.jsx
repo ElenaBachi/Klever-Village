@@ -6,7 +6,7 @@ function Rules() {
   return (
     <section className="rules" id="rules">
       <div className="wrap">
-        <h2 class="rules__title">Правила проживания</h2>
+        <h2 className="rules__title">Правила проживания</h2>
 
         <RulesList />
       </div>

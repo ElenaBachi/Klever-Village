@@ -1,10 +1,10 @@
-import { subnavItems } from "../../../data";
-import SubnavItem from "../subnav-item/_Subnav-item";
+import { navigationItems } from "../../../data";
+import NavigationItem from "../navigation-item/_Navigation-item";
 import "./style.scss";
 
 function Subnav() {
-  const subnavList = subnavItems.map((item) => {
-    return <SubnavItem {...item} />;
+  const subnavList = navigationItems.map((item) => {
+    return item.isSubnav ? <NavigationItem {...item} /> : "";
   });
 
   return (
