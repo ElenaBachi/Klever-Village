@@ -9,6 +9,7 @@ import Galery from "../../sections/galery/_Galery";
 import Surroundings from "../../sections/surroundings/_Surroundings";
 // import Map from "../../sections/map/_Map";
 // import BackCall from "../../sections/back-call/_Back-call";
+import Reviews from "../../sections/reviews/_Reviews";
 
 import "./style.scss";
 
@@ -25,6 +26,7 @@ function Main() {
       <Surroundings />
       {/* <Map />
       <BackCall /> */}
+      <Reviews />
     </main>
   );
 }

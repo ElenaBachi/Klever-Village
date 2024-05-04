@@ -1,11 +1,16 @@
-.surroundings {
+.reviews {
+  background-color: $beige-color;
+  text-align: justify;
+
   * {
     font-size: $text-font-size;
     line-height: $text-line-height;
     font-weight: $light-font-weight;
   }
 
-  .surroundings__title {
+  .reviews__title {
+    margin-bottom: 30px;
+
     font-size: $title-font-size;
     line-height: $title-font-size;
   }

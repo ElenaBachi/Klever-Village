@@ -28,12 +28,16 @@ export const subnavItems = [
   },
   { name: "КУХНЯ" },
   {
+    name: "ПРАВИЛА ПРОЖИВАНИЯ",
+    href: "#rules",
+  },
+  {
     name: "ОКРЕСТНОСТИ",
     href: "#surroundings",
   },
   {
-    name: "ПРАВИЛА ПРОЖИВАНИЯ",
-    href: "#rules",
+    name: "ОТЗЫВЫ",
+    href: "#reviews",
   },
 ];
 
@@ -229,5 +233,26 @@ export const surroundings = [
     description:
       "Маршрут проходит по лесным угодьям Котельского заказника между Копанским озером и Финским заливом. Протяженность маршрута – 5,8 км. Часть тропы идет вдоль Копорской Губы и в районе реки Пейпия выходит на берег Финского залива.Основная часть экотропы - это существующая дорожно-тропиночная сеть заказника, проходящая по страровозрастному лесу. На маршруте установлены информационные стенды, беседки для отдыха, а также есть костровое место. Экотропа в заказнике Котельский очень насыщенная и разнообразная: тут будет и густой лес, и берег залива с остатками старой рыбацкой гавани, и популярное среди местных жителей Копанское озеро.",
     imgUrl: "",
+  },
+];
+
+export const reviews = [
+  {
+    text: "Отзыв 1 Nisi ullamco laborum consectetur excepteur ea enim in non ipsum et nostrud commodo.",
+  },
+  {
+    text: " Отзыв 2 Exercitation aliquip consectetur id excepteur cupidatat id est qui magna sit officia.",
+  },
+  {
+    text: " Отзыв 3 Magna ex in cillum magna in amet ullamco qui.",
+  },
+  {
+    text: " Отзыв 4 Nisi ullamco laborum consectetur excepteur ea enim in non ipsum et nostrud commodo.",
+  },
+  {
+    text: " Отзыв 5 Exercitation aliquip consectetur id excepteur cupidatat id est qui magna sit officia.",
+  },
+  {
+    text: " Отзыв 6 Magna ex in cillum magna in amet ullamco qui.",
   },
 ];
