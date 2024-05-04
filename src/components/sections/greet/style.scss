@@ -29,12 +29,39 @@
   }
 
   .greet__title {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 
     font-weight: $light-font-weight;
   }
 
   .greet__text {
+    @include flex(row, space-around, center);
+    flex-wrap: no-wrap;
     margin-bottom: 80px;
+
+    p {
+      display: inline-block;
+      white-space: nowrap;
+    }
+  }
+
+  .text-typing {
+    overflow: hidden;
+    width: 0;
+    animation: typing;
+    animation-duration: 3s;
+    animation-timing-function: steps(30, end);
+    animation-fill-mode: forwards;
+
+    color: $orange-color;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
   }
 }
