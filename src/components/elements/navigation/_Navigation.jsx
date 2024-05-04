@@ -4,9 +4,13 @@ import { navigationItems } from "../../../data";
 import Subnav from "../subnav/_Subnav";
 import "./style.scss";
 
-function Navigation({ isOpen }) {
+function Navigation({ isOpen, toggleMenu }) {
   const navItemsList = navigationItems.map((item) => {
-    return <NavigationItem {...item} />;
+    return !item.isSubnav ? (
+      <NavigationItem {...item} onclick={toggleMenu} />
+    ) : (
+      ""
+    );
   });
 
   return (

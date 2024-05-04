@@ -1,14 +1,15 @@
-import Header from "./components/layout/header/_Header";
-import Main from "./components/layout/main/_Main";
-import Footer from "./components/layout/footer/_Footer";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./components/pages/Home/_Home";
+import Activities from "./components/pages/Activities/_Activities";
 
 function App() {
   return (
-    <>
-      <Header />
-      <Main />
-      <Footer />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/activities" element={<Activities />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
