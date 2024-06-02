@@ -6,7 +6,7 @@ import Services from "../../sections/services/_Services";
 import Rules from "../../sections/rules/_Rules";
 import Extras from "../../sections/extras/_Extras";
 import Galery from "../../sections/galery/_Galery";
-import Surroundings from "../../sections/surroundings/_Surroundings";
+import Suburbs from "../../sections/suburbs/_Suburbs";
 // import Map from "../../sections/map/_Map";
 // import BackCall from "../../sections/back-call/_Back-call";
 import Reviews from "../../sections/reviews/_Reviews";
@@ -23,7 +23,7 @@ function Main() {
       <Rules />
       <Extras />
       <Galery />
-      <Surroundings />
+      <Suburbs />
       {/* <Map />
       <BackCall /> */}
       <Reviews />

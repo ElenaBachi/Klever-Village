@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 import "./style.scss";
 
-function Button() {
+function Button({ link }) {
   return (
     <div className="details">
-      <Link to="/activities">
+      <Link to={link}>
         <button className="details__btn">Подробнее</button>
       </Link>
     </div>

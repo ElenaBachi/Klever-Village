@@ -10,7 +10,7 @@ function Services() {
       <div className="wrap">
         <h2 className="services__title">Чем заняться</h2>
         <ServicesList />
-        <Button />
+        <Button link={"/activities"} />
       </div>
     </section>
   );

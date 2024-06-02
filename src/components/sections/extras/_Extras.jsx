@@ -8,7 +8,7 @@ function Extras() {
   return (
     <section className="extras" id="extras">
       <div className="wrap">
-        <h2 class="extras__title">Дополнительные услуги</h2>
+        <h2 className="extras__title">Дополнительные услуги</h2>
 
         <ExtrasList extras={extras} />
       </div>

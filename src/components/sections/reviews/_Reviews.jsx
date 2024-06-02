@@ -7,7 +7,7 @@ function Reviews() {
   return (
     <section className="reviews" id="reviews">
       <div className="wrap">
-        <h2 class="reviews__title">Отзывы</h2>
+        <h2 className="reviews__title">Ваши впечатления</h2>
 
         <ReviewsSlider />
       </div>

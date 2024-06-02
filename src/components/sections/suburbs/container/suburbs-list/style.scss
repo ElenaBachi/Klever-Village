@@ -1,0 +1,6 @@
+.suburbs__list {
+  @include flex(row, space-between, center);
+
+  width: 80%;
+  margin: 0 auto;
+}

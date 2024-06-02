@@ -1,20 +1,19 @@
-.activities {
+.surroundings {
   background: #fff;
 
   * {
     font-weight: $light-font-weight;
   }
 
-  .activities__title {
+  wrap {
+    @include flex(column, space-between, center);
+    padding: 100px 0;
+  }
+
+  .suburbs__title {
     margin-bottom: 2.1875rem;
 
     font-size: $title-font-size;
     line-height: $title-font-size;
-  }
-
-  img {
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
   }
 }

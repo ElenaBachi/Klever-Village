@@ -1,0 +1,58 @@
+.footer {
+  padding: 40px 0;
+
+  background-color: $khaki-color;
+
+  color: $beige-color;
+
+  .wrap {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+  }
+
+  .contacts {
+    justify-self: start;
+    gap: 25px;
+
+    margin-left: 25%;
+  }
+
+  .logo {
+    @include size(180px, auto);
+  }
+
+  .address {
+    position: relative;
+
+    margin-left: 35px;
+
+    justify-self: end;
+
+    transition: 0.7s;
+    border-bottom: 1px solid transparent;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: -35px;
+      transform: translateY(-50%);
+      @include size(36px, 36px);
+
+      background-image: url("/src/assets/images/geolocation.svg");
+      background-repeat: no-repeat;
+
+      transition: transform 0.7s ease;
+    }
+
+    &:hover {
+      border-bottom: 1px solid $beige-color;
+
+      &::before {
+        transform: translateY(-70%);
+      }
+    }
+  }
+}

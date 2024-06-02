@@ -7,6 +7,8 @@ function ActivitiesList() {
   return (
     <section className="activities">
       <div className="wrap">
+        <h2 className="activities__title">Чем заняться</h2>
+
         <ul className="activities__list">
           {activities.map((activity) => {
             return <ActivityItem {...activity} />;

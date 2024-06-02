@@ -7,7 +7,7 @@ export default function Activities() {
   return (
     <>
       <Header />
-      <ActivitiesList />
+      <ActivitiesList link={"/activities"} />
       <Footer />
     </>
   );

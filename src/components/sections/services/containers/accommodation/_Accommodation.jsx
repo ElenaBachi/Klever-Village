@@ -5,7 +5,7 @@ import "./style.scss";
 
 function Accomodation() {
   return (
-    <div className="onditions__content accommodation">
+    <div className="conditions__content accommodation">
       <AccomodationList />
     </div>
   );
