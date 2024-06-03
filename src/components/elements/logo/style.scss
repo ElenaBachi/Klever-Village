@@ -1,3 +1,8 @@
 .logo {
-  @include size(128px, 45px);
+  @include size(138px, auto);
+  margin-right: 20px;
+}
+
+a {
+  display: flex;
 }

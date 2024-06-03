@@ -1,9 +1,10 @@
 .contacts {
   @include flex(row, space-between, center);
-  gap: 2%;
-  @include size(12%, 100%);
+  gap: 2px;
 
   & a {
+    display: flex;
+
     &:hover svg {
       transform: translateY(-1.5px);
     }
@@ -14,6 +15,6 @@
   }
 
   .instagram {
-    padding-right: 5px;
+    padding-right: 4px;
   }
 }
