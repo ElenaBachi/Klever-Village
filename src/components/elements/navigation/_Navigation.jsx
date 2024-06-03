@@ -1,24 +1,23 @@
 import React, { useState } from "react";
-import NavigationItem from "../navigation-item/_Navigation-item";
-import { navigationItems } from "../../../data";
-import Subnav from "../subnav/_Subnav";
+import NavigationList from "../navigation-list/_Navigation-list";
+import Contacts from "../contacts/_Contacts";
+//import Subnav from "../subnav/_Subnav";
+import BurgerMenu from "../burger-menu/_Burger-menu";
 import "./style.scss";
 
-function Navigation({ isOpen, toggleMenu }) {
-  const navItemsList = navigationItems.map((item) => {
-    return !item.isSubnav ? (
-      <NavigationItem {...item} onclick={toggleMenu} />
-    ) : (
-      ""
-    );
-  });
+export default function Navigation() {
+  const [isOpen, setOpen] = useState();
+  const onclick = () => setOpen(!isOpen);
+  const close = () => setOpen(false);
 
   return (
-    <nav className="main-nav">
-      <ul className="main-nav__list">{navItemsList}</ul>
-      {isOpen && <Subnav />}
-    </nav>
+    <div className="menu-container">
+      <nav className={`main-nav ${isOpen ? "active" : ""}`}>
+        <NavigationList onClick={close} />
+        <Contacts />
+        {/* {isOpen && <Subnav />} */}
+      </nav>
+      <BurgerMenu onClick={onclick} />
+    </div>
   );
 }
-
-export default Navigation;

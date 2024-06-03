@@ -36,7 +36,7 @@ export const navigationItems = [
   //   name: "КАК ДОБРАТЬСЯ",
   // },
   {
-    isSubnav: true,
+    isSubnav: false,
     name: "ЧЕМ ЗАНЯТЬСЯ",
     href: "activities",
   },
@@ -45,12 +45,12 @@ export const navigationItems = [
   //   name: "КУХНЯ",
   // },
   {
-    isSubnav: true,
+    isSubnav: false,
     name: "ПРАВИЛА ПРОЖИВАНИЯ",
     href: "rules",
   },
   {
-    isSubnav: true,
+    isSubnav: false,
     name: "ОКРЕСТНОСТИ",
     href: "suburbs",
   },

@@ -1,3 +1,7 @@
 .main-nav__item {
   cursor: pointer;
+
+  &:hover {
+    color: #aea48a;
+  }
 }
