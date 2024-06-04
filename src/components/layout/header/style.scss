@@ -5,10 +5,9 @@
 
   @include flex(row, space-between, center);
   @include size(100%, 70px);
-  padding: 0 20px;
+  @include padding(0, 20px);
 
   color: $white-color;
-  font-size: $text-font-size;
 
   background-color: $khaki-color;
 

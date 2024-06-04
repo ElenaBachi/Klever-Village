@@ -1,0 +1,6 @@
+.activity__item {
+  img {
+    @include size(50%, 50%);
+    object-fit: cover;
+  }
+}

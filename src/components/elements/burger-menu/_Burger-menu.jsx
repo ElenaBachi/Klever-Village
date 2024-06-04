@@ -1,16 +1,11 @@
 import React, { useState } from "react";
 import "./style.scss";
 
-export default function BurgerMenu({ onClick }) {
-  const [isActive, setActive] = useState();
-
+export default function BurgerMenu({ onClick, isOpen }) {
   return (
     <button
-      className={`header__menu-btn ${isActive ? "opened" : ""}`}
-      onClick={() => {
-        onClick();
-        setActive(!isActive);
-      }}
+      className={`header__menu-btn ${isOpen ? "opened" : ""}`}
+      onClick={onClick}
     >
       <span className="bar-top"></span>
       <span className="bar-mid"></span>

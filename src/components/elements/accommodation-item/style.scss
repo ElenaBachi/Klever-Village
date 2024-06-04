@@ -17,12 +17,7 @@
 .accommodation__content {
   @include flex(column, flex-start, flex-start);
 
-  gap: $after-text-margin;
-
-  h4 {
-    font-size: $title-font-size;
-    line-height: $title-font-size;
-  }
+  gap: 0.625rem;
 
   .description {
     li:not(:last-child) {
@@ -40,7 +35,7 @@
 
     span {
       font-weight: bolder;
-      font-size: 1.1rem;
+      font-size: calc($text-font-size + 1px);
     }
   }
 

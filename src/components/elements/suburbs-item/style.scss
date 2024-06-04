@@ -1,9 +1,8 @@
 .suburbs__item {
   @include flex(column, center, center);
   gap: 20px;
-  width: 100%;
 
-  font-size: 1.1rem;
+  font-size: calc($text-font-size + 2px);
 }
 
 .suburbs__img {
@@ -11,9 +10,10 @@
 
   img {
     display: block;
-    width: 11.25rem;
-    height: 11.25rem;
+    @include size(180px, 180px);
+
     object-fit: cover;
+
     transition: transform 0.4s ease-in-out;
     transform: scale(1.1);
 

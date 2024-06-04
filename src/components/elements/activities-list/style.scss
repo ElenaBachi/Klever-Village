@@ -1,20 +1,7 @@
 .activities {
   background: #fff;
 
-  * {
-    font-weight: $light-font-weight;
-  }
-
   .activities__title {
     margin-bottom: 2.1875rem;
-
-    font-size: $title-font-size;
-    line-height: $title-font-size;
-  }
-
-  img {
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
   }
 }

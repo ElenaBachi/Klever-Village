@@ -6,7 +6,7 @@
 
 .book__btn,
 .details__btn {
-  padding: 10px 20px;
+  @include padding(10px, 20px);
 
   font-size: 0.75rem;
   color: $khaki-color;

@@ -45,7 +45,9 @@
 }
 
 .extras-item {
-  @include flex(row, space-between, center);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   width: 100%;
 
   p {
