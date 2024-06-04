@@ -1,12 +1,24 @@
 import "./style.scss";
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
+import { NavHashLink } from "react-router-hash-link";
 
-export default function NavigationItem({ name, href, close }) {
+export default function NavigationItem({ name, href, onClick }) {
+  const scrollWithOffset = (el) => {
+    const yCoordinate = el.getBoundingClientRect().top + window.scrollY;
+    const yOffset = -70;
+    window.scrollTo({ top: yCoordinate + yOffset });
+  };
+
   return (
-    <li className="main-nav__item" onClick={close}>
-      <Link to={href} spy={true} smooth={true} offset={-70} duration={300}>
+    <li className="main-nav__item" onClick={onClick}>
+      <NavHashLink
+        to={href}
+        smooth
+        activeClassName="selected"
+        scroll={(el) => scrollWithOffset(el)}
+      >
         {name}
-      </Link>
+      </NavHashLink>
     </li>
   );
 }

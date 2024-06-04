@@ -1,10 +1,6 @@
 .services {
   background: #fff;
 
-  * {
-    font-weight: $light-font-weight;
-  }
-
   wrap {
     @include flex(column, space-between, center);
     padding: 100px 0;
@@ -12,9 +8,6 @@
 
   .services__title {
     margin-bottom: 2.1875rem;
-
-    font-size: $title-font-size;
-    line-height: $title-font-size;
   }
 
   .services__text {

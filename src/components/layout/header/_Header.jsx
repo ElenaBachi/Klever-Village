@@ -6,18 +6,10 @@ import BookButton from "../../elements/book-button/_Book-button";
 import "./style.scss";
 
 function Header() {
-  const [isOpen, setOpen] = useState(false);
-  const toggleMenu = () => setOpen((isOpen) => !isOpen);
-
   return (
-    <header
-      className={`header ${isOpen ? "active" : ""}`}
-      onMouseOver={toggleMenu}
-      onMouseOut={toggleMenu}
-      toggleMenu={toggleMenu}
-    >
+    <header className="header">
       <Logo />
-      <Navigation isOpen={isOpen} />
+      <Navigation />
       <BookButton />
     </header>
   );

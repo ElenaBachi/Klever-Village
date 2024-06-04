@@ -2,6 +2,10 @@
   padding: $vertical $horizontal;
 }
 
+@mixin margin($vertical, $horizontal) {
+  margin: $vertical $horizontal;
+}
+
 @mixin size($width, $height) {
   width: $width;
   height: $height;

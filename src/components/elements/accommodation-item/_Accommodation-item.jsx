@@ -57,7 +57,7 @@ export default function AccommodationItem(props) {
         ) : (
           <>
             <p className="accommodation__price">
-              <span>Стоимость {accommodationOptions.price} &#8381;</span> в
+              Стоимость <span>{accommodationOptions.price} &#8381;</span> в
               сутки
             </p>
           </>
