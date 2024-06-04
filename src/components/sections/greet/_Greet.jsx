@@ -14,7 +14,7 @@ function Greet() {
         <p className="text-typing"> быть ближе к природе</p>
       </div>
 
-      <Form />
+      {/* <Form /> */}
     </section>
   );
 }

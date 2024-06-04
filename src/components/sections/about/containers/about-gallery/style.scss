@@ -2,11 +2,14 @@
   grid-column: 2/3;
   justify-self: self-end;
 
-  @include size(350px, 350px);
+  @include size(35vw, 45vh);
 
   img {
     @include img(100%, 100%);
 
-    border-radius: 50%;
+    border-top-left-radius: 80px;
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 80px;
+    //border-bottom-left-radius: 80px;
   }
 }

@@ -49,7 +49,7 @@ a {
 }
 
 h2 {
-  margin-bottom: $after-text-margin;
+  @include margin($after-text-margin, 0);
 
   font-size: $title-font-size;
   text-align: center;
@@ -57,4 +57,20 @@ h2 {
 
 h4 {
   font-size: $title-font-size;
+}
+
+@media screen and (max-width: 1000px) {
+  section {
+    @include padding(50px, 0);
+
+    &::before {
+      top: 40px;
+
+      @include size(35px, 4px);
+    }
+  }
+
+  h2 {
+    @include margin($after-text-margin-mobile, 0);
+  }
 }
