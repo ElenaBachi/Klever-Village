@@ -1,5 +1,5 @@
 .footer {
-  padding: 40px 0;
+  padding: 30px 0;
 
   background-color: $khaki-color;
 
@@ -12,21 +12,12 @@
     align-items: center;
   }
 
-  .contacts {
-    justify-self: start;
-    gap: 25px;
-
-    margin-left: 25%;
-  }
-
   .logo {
-    @include size(180px, auto);
+    @include size(15vw, auto);
   }
 
   .address {
     position: relative;
-
-    margin-left: 35px;
 
     justify-self: end;
 
@@ -36,8 +27,8 @@
     &::before {
       content: "";
       position: absolute;
-      top: 50%;
-      left: -35px;
+      top: 45%;
+      left: -30px;
       transform: translateY(-50%);
       @include size(36px, 36px);
 

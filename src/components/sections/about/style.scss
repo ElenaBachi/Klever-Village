@@ -2,10 +2,6 @@
   background-color: $white-color;
   text-align: justify;
 
-  * {
-    font-weight: $light-font-weight;
-  }
-
   .wrap {
     display: grid;
     grid-template-columns: repeat(2, 1fr);

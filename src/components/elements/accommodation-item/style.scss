@@ -1,11 +1,13 @@
 .accommodation__item {
   display: grid;
-  grid-template-columns: 1.8fr 1.2fr;
-  gap: 2.5rem;
+  grid-template-columns: 1.1fr 0.9fr;
+  align-items: stretch;
+
+  gap: 2vw;
 }
 
 .accommodation__galery {
-  @include size(100%, 450px);
+  @include size(100%, 400px);
 
   img {
     @include img(100%, 100%);

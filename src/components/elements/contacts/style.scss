@@ -2,7 +2,11 @@
   @include flex(row, space-between, center);
   gap: 2px;
 
-  & a {
+  li:not(:first-child) path {
+    stroke-width: 2px;
+  }
+
+  a {
     display: flex;
 
     &:hover svg {
@@ -10,11 +14,34 @@
     }
 
     &:hover path {
-      fill: #bacda5;
+      stroke: #bacda5;
     }
   }
 
   .instagram {
-    padding-right: 4px;
+    padding-right: 6px;
+  }
+}
+
+.footer {
+  .contacts {
+    @include flex(row, space-between, center);
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .main-nav .contacts {
+    gap: 15px;
+    padding: 20px;
+    padding-top: 0;
+
+    a path {
+      stroke: $orange-color;
+    }
+
+    a:hover path {
+      stroke: $beige-color;
+    }
   }
 }

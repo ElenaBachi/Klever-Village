@@ -5,7 +5,9 @@ $title-font-size: 2vw;
 $text-font-size: 1.3vw;
 $text-line-height: 1.5rem;
 $light-font-weight: 200;
+
 $after-text-margin: 15px;
+$after-text-margin-mobile: 10px;
 
 $greet-book-btn-width: 300px;
 $greet-book-btn-height: 60px;
@@ -18,5 +20,5 @@ $dark-grey-color: #333333;
 $beige-color: #faf8f0;
 $white-color: #ffffff;
 
-$tablet-width: 768px;
-$laptop-width: 1024px;
+$mobile-max-width: 767px;
+$tablet-max-width: 1023px;
