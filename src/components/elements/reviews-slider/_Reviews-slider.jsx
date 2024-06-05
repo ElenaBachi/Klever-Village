@@ -12,6 +12,26 @@ export default function QuotsSlider() {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 701,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          dots: true,
+          infinite: true,
+        },
+      },
+      {
+        breakpoint: 531,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: true,
+          infinite: true,
+        },
+      },
+    ],
   };
 
   return (

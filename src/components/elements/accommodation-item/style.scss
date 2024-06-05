@@ -53,3 +53,22 @@
     }
   }
 }
+
+@media screen and (max-width: $mobile-max-width) {
+  .accommodation__item {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, auto);
+  }
+
+  .accommodation__galery {
+    @include size(100%, 250px);
+  }
+
+  .accommodation__content {
+    .accommodation__price {
+      span {
+        font-size: $mobile-text-font-size;
+      }
+    }
+  }
+}

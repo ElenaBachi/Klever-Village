@@ -56,3 +56,17 @@
 
   background-image: url("/src/assets/images/galery-5.jpg");
 }
+
+@media screen and (max-width: $tablet-max-width) {
+  .galery__container {
+    grid-template-rows: repeat(3, 130px);
+    gap: 5px;
+  }
+}
+
+@media screen and (max-width: $mobile-max-width) {
+  .galery__container {
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+  }
+}

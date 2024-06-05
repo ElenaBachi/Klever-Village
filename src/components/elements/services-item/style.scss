@@ -26,3 +26,12 @@
     }
   }
 }
+
+@media screen and (max-width: $mobile-max-width) {
+  .services__item {
+    @include flex(column, center, center);
+    gap: $after-text-margin-mobile;
+
+    font-size: $mobile-text-font-size;
+  }
+}

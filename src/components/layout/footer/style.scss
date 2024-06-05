@@ -47,3 +47,26 @@
     }
   }
 }
+
+@media screen and (max-width: $mobile-max-width) {
+  .footer {
+    padding: 10px 0;
+
+    .wrap {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(3, 1fr);
+      gap: 15px;
+    }
+
+    .logo {
+      @include size(25vw, auto);
+    }
+
+    .address {
+      position: relative;
+
+      margin-left: 5px;
+      justify-self: center;
+    }
+  }
+}

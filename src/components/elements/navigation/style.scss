@@ -2,7 +2,7 @@
   @include flex(row, flex-start, center);
   padding-right: 10px;
 
-  font-size: 0.625rem;
+  font-size: $link-font-size;
   text-transform: uppercase;
 }
 
@@ -36,5 +36,11 @@
 
   .main-nav.active {
     transform: translateX(0%);
+  }
+}
+
+@media screen and (max-width: $mobile-max-width) {
+  .main-nav {
+    font-size: $link-font-size;
   }
 }
