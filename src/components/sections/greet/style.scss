@@ -66,14 +66,22 @@
   }
 }
 
-// @media (min-width: 980px) and (max-width: 1199px) {
-//   .greet {
-//     font-size: 2rem;
-//   }
-// }
+@media screen and (max-width: $mobile-max-width) {
+  .greet {
+    .greet__logo {
+      @include size(200px, auto);
 
-// @media (max-width: 979px) {
-//   .greet {
-//     font-size: 2rem;
-//   }
-// }
+      margin-bottom: 30px;
+    }
+
+    .greet__title {
+      margin-bottom: 0;
+
+      font-size: $greet-title-font-size;
+    }
+
+    .greet__text {
+      font-size: 15px;
+    }
+  }
+}

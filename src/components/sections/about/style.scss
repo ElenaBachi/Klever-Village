@@ -13,3 +13,21 @@
     color: #8a9c76;
   }
 }
+
+@media screen and (max-width: $mobile-max-width) {
+  .about {
+    padding-bottom: 0;
+
+    .wrap {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(2, auto);
+    }
+
+    h3 {
+      margin-bottom: $after-text-margin-mobile;
+
+      color: #8a9c76;
+    }
+  }
+}

@@ -6,3 +6,10 @@
 a {
   display: flex;
 }
+
+@media screen and (max-width: $mobile-max-width) {
+  .logo {
+    @include size(115px, auto);
+    margin-right: 0;
+  }
+}

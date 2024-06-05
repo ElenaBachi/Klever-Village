@@ -74,3 +74,36 @@ h4 {
     @include margin($after-text-margin-mobile, 0);
   }
 }
+
+@media screen and (max-width: $mobile-max-width) {
+  body {
+    font-size: $mobile-text-font-size;
+    line-height: $mobile-text-line-height;
+  }
+
+  .wrap {
+    width: 94%;
+  }
+
+  section {
+    position: relative;
+
+    @include padding(25px, 0);
+
+    &::before {
+      top: 25px;
+
+      @include size(30px, 3px);
+    }
+  }
+
+  h2 {
+    @include margin($after-text-margin-mobile, 0);
+
+    font-size: $mobile-title-font-size;
+  }
+
+  h4 {
+    font-size: $mobile-title-font-size;
+  }
+}

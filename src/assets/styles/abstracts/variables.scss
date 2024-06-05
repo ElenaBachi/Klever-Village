@@ -6,19 +6,31 @@ $text-font-size: 1.3vw;
 $text-line-height: 1.5rem;
 $light-font-weight: 200;
 
+$link-font-size: 10px;
+
 $after-text-margin: 15px;
-$after-text-margin-mobile: 10px;
 
 $greet-book-btn-width: 300px;
 $greet-book-btn-height: 60px;
 $book-btn-width: 160px;
 $book-btn-height: 50px;
 
+// Colors
 $khaki-color: #52503b;
 $orange-color: #e08631;
 $dark-grey-color: #333333;
 $beige-color: #faf8f0;
 $white-color: #ffffff;
 
-$mobile-max-width: 767px;
+// Adaptive screen widths
+$mobile-max-width: 760px;
 $tablet-max-width: 1023px;
+
+// Mobile sizes
+$mobile-title-font-size: 18px;
+$mobile-text-font-size: 14px;
+$mobile-text-line-height: 18px;
+
+$greet-title-font-size: 30px;
+
+$after-text-margin-mobile: 10px;

@@ -56,5 +56,23 @@
 
   span {
     margin-right: 50px;
+
+    white-space: nowrap;
+  }
+}
+
+@media screen and (max-width: $mobile-max-width) {
+  .extras-item {
+    display: grid;
+    grid-template-columns: 0.7fr 0.3fr;
+
+    p {
+      margin-bottom: $after-text-margin;
+    }
+
+    span {
+      margin-right: 0;
+      justify-self: end;
+    }
   }
 }

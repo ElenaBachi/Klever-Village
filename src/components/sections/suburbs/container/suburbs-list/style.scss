@@ -4,3 +4,12 @@
   width: 80%;
   margin: 0 auto;
 }
+
+@media screen and (max-width: $mobile-max-width) {
+  .suburbs__list {
+    @include flex(column, space-between, center);
+    gap: $after-text-margin-mobile;
+
+    width: 100%;
+  }
+}
