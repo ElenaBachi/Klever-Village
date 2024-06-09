@@ -4,7 +4,10 @@ function Contacts() {
   return (
     <ul className="contacts">
       <li className="instagram">
-        <a href="" target="_blank">
+        <a
+          href="https://www.instagram.com/klever__village/?igsh=b2RkMnBkbWc3eXZw"
+          target="_blank"
+        >
           <svg
             width="23"
             height="23"
@@ -36,7 +39,10 @@ function Contacts() {
         </a>
       </li>
       <li>
-        <a href="https://wa.me/79XXXXXXXXX" target="_blank">
+        <a
+          href="https://wa.me/79812710703?text=Здравствуйте! Хотел бы забронировать номер в вашем отеле на два человека с 15 по 20 мая. Какие есть варианты размещения и цены?"
+          target="_blank"
+        >
           <svg
             width="23"
             height="23"

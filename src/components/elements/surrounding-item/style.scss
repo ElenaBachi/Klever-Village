@@ -1,3 +1,7 @@
+.accordion-header {
+  font-size: $text-font-size;
+}
+
 .surrounding-item.accordion-item {
   text-align: justify;
   .plus-icon {
@@ -5,6 +9,20 @@
   }
 
   span {
+    display: block;
+    margin-top: $after-text-margin-mobile;
     color: #8a9c76;
+  }
+}
+
+.surrounding-item__content {
+  p {
+    padding-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: $mobile-max-width) {
+  .accordion-header {
+    font-size: $mobile-text-font-size;
   }
 }

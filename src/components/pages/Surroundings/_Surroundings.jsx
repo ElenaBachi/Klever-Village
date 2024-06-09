@@ -4,8 +4,6 @@ import Footer from "../../layout/footer/_Footer";
 import SurroundingsList from "../../elements/surroundings-list/_Surroundings-list";
 import { surroundings } from "../../../data";
 
-import "./style.scss";
-
 function Surroundings() {
   return (
     <>

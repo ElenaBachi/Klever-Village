@@ -8,7 +8,13 @@ export default function SurroundingsList({ surroundings }) {
   return (
     <section className="surroundings">
       <div className="wrap">
-        <h2 className="suburbs__title">Окрестности</h2>
+        <h2 className="surroundings__title">Окрестности</h2>
+        <p className="surroundings__description">
+          Исследуйте удивительные окрестности Klever Village. <br /> Здесь вы
+          найдете информацию о достопримечательностях, маршрутах для прогулок и
+          других интересных местах, которые стоит посетить во время вашего
+          отдыха.
+        </p>
 
         <ul className="accordion">
           {surroundings.map((item, id) => {

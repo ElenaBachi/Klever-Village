@@ -2,9 +2,7 @@
 @import "./abstracts/variables.scss";
 @import "./reset/reset.scss";
 
-body {
-  width: 100vw;
-
+#root {
   font-family: "Montserrat", sans-serif;
   font-size: $text-font-size;
   line-height: $text-line-height;
@@ -12,8 +10,20 @@ body {
   color: $dark-grey-color;
 
   * {
-    font-size: inherit;
     font-weight: inherit;
+  }
+
+  header {
+    font-size: $link-font-size;
+    color: $beige-color;
+  }
+
+  h2 {
+    font-size: $title-font-size;
+  }
+
+  h4 {
+    font-size: $title-font-size;
   }
 }
 
@@ -51,12 +61,11 @@ a {
 h2 {
   @include margin($after-text-margin, 0);
 
-  font-size: $title-font-size;
   text-align: center;
 }
 
-h4 {
-  font-size: $title-font-size;
+button {
+  font-size: 0.95vw;
 }
 
 @media screen and (max-width: 1000px) {
@@ -75,10 +84,26 @@ h4 {
   }
 }
 
+@media screen and (min-width: $mobile-max-width) and (max-width: 1199px) {
+  #root {
+    header {
+      font-size: $text-font-size;
+    }
+  }
+}
+
 @media screen and (max-width: $mobile-max-width) {
-  body {
+  #root {
     font-size: $mobile-text-font-size;
     line-height: $mobile-text-line-height;
+
+    h2 {
+      font-size: $mobile-title-font-size;
+    }
+
+    h4 {
+      font-size: $mobile-title-font-size;
+    }
   }
 
   .wrap {
@@ -99,11 +124,9 @@ h4 {
 
   h2 {
     @include margin($after-text-margin-mobile, 0);
-
-    font-size: $mobile-title-font-size;
   }
 
-  h4 {
-    font-size: $mobile-title-font-size;
+  button {
+    font-size: $link-font-size;
   }
 }

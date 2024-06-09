@@ -15,7 +15,7 @@ import "./style.scss";
 
 function Main() {
   return (
-    <main>
+    <main className="main">
       <Greet />
       <About />
       <Conditions />
