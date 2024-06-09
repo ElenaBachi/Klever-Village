@@ -11,7 +11,7 @@ function Footer() {
         <Contacts />
         <Logo />
         <a
-          href="https://yandex.ru/maps/-/CCUCB8WC9D"
+          href="https://yandex.ru/maps/-/CDrBNMoi"
           className="address"
           target="_blank"
         >

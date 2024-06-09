@@ -3,7 +3,7 @@ import "./style.scss";
 import { ReactComponent as PlusIcon } from "../../../assets/images/plus-icon.svg";
 
 export default function SurroundingItem({ item, onClick, isOpen }) {
-  const { title, note, description, imgUrl } = item;
+  const { title, note, paragraphs, imgUrl } = item;
   const itemRef = useRef(null);
 
   return (
@@ -23,8 +23,11 @@ export default function SurroundingItem({ item, onClick, isOpen }) {
         }
       >
         <div className="accordion-body" ref={itemRef}>
-          <p>{description}</p>
-          <img src={imgUrl} alt="" />
+          <div className="surrounding-item__content">
+            {paragraphs.map((paragraph) => (
+              <p>{paragraph}</p>
+            ))}
+          </div>
         </div>
       </div>
     </li>

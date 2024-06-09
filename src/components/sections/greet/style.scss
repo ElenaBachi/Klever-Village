@@ -6,11 +6,8 @@
   padding-top: 200px;
 
   text-align: center;
-  color: #e5e2d0;
-  font-size: 3.5vw;
-  line-height: $greet-text-font-size;
-  font-weight: inherit;
-
+  color: $beige-color;
+  line-height: $greet-line-height;
   width: 100%;
   background: url("/src/assets/images/background.png");
   background-repeat: no-repeat;
@@ -31,29 +28,25 @@
   .greet__title {
     margin-bottom: 40px;
 
-    font-weight: $light-font-weight;
+    font-size: 6vw;
   }
 
   .greet__text {
-    @include flex(row, space-around, center);
-    flex-wrap: no-wrap;
-    margin-bottom: 80px;
-
-    p {
-      display: inline-block;
-      white-space: nowrap;
-    }
+    font-size: 4vw;
   }
 
   .text-typing {
-    overflow: hidden;
-    width: 0;
-    animation: typing;
-    animation-duration: 3s;
-    animation-timing-function: steps(30, end);
-    animation-fill-mode: forwards;
-
-    color: $orange-color;
+    p {
+      display: inline-block;
+      text-wrap: nowrap;
+      overflow: hidden;
+      width: 0;
+      animation: typing;
+      animation-duration: 2s;
+      animation-timing-function: steps(30, end);
+      animation-fill-mode: forwards;
+      color: $orange-color;
+    }
   }
 }
 
@@ -82,6 +75,7 @@
 
     .greet__text {
       font-size: 15px;
+      line-height: $after-text-margin;
     }
   }
 }

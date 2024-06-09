@@ -6,7 +6,7 @@
 
 .book__btn,
 .details__btn {
-  @include padding(10px, 20px);
+  @include padding(10px, 4vw);
 
   font-size: 0.75rem;
   color: $khaki-color;
@@ -18,5 +18,13 @@
   &:hover {
     transform: scale(0.95);
     transition: all 0.4s ease;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .book {
+    margin-left: auto;
+
+    order: 1;
   }
 }
