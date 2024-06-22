@@ -10,7 +10,7 @@
 .galery__container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 160px);
+  grid-template-rows: repeat(3, 30vh);
   gap: 7px;
   width: 100%;
 }
@@ -30,7 +30,7 @@
 }
 
 .photo-2 {
-  grid-column: 2 / 3;
+  grid-column: 2 / 4;
   grid-row: 1 / 2;
 
   background-image: url("/src/assets/images/galery-2.jpg");
@@ -38,9 +38,10 @@
 
 .photo-3 {
   grid-column: 3 / 4;
-  grid-row: -1 / 1;
+  grid-row: 2 / 4;
 
   background-image: url("/src/assets/images/galery-3.jpg");
+  background-position: center bottom;
 }
 
 .photo-4 {
@@ -55,11 +56,12 @@
   grid-row: 3 / 4;
 
   background-image: url("/src/assets/images/galery-5.jpg");
+  background-position: center bottom;
 }
 
 @media screen and (max-width: $tablet-max-width) {
   .galery__container {
-    grid-template-rows: repeat(3, 130px);
+    grid-template-rows: repeat(3, 250px);
     gap: 5px;
   }
 }

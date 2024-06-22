@@ -1,7 +1,7 @@
 .services {
   background: #fff;
 
-  wrap {
+  .wrap {
     @include flex(column, space-between, center);
     padding: 100px 0;
   }
