@@ -1,0 +1,77 @@
+.accommodation__galery {
+  @include size(45vw, 33vw);
+
+  .slider-container {
+    margin: 0;
+    padding: 0;
+    @include size(100%, 100%);
+
+    * {
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  .slick-slider {
+    position: relative;
+    @include size(100%, 100%);
+    overflow: hidden;
+    border-radius: 80px;
+  }
+
+  img {
+    @include img(100%, 100%);
+  }
+
+  .slick-arrow {
+    position: absolute;
+    top: 50%;
+    width: 45px;
+    height: 45px;
+    z-index: 10;
+
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 45px;
+      height: 45px;
+      background-color: $beige-color;
+      border: 1px solid $khaki-color;
+      border-radius: 50%;
+      opacity: 10;
+      background-image: url("/src/assets/images/next.svg");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 25px 30px;
+      transition: all 0.3s ease-in-out;
+
+    }
+
+    &:hover {
+      &::before {
+        background-color: rgba($color: $beige-color, $alpha: 0.6);
+      }
+    }
+  }
+
+  button.slick-arrow.slick-prev {
+    left: 2%;
+
+    &::before {
+      transform: rotate(180deg);
+    }
+  }
+
+  button.slick-arrow.slick-next {
+    right: 2%;
+  }
+}
+
+// @media screen and (max-width: $mobile-max-width) {
+//   .accommodation__galery {
+//     @include size(100%, 250px);
+//   }
+// }

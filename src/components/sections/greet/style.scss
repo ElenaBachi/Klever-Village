@@ -1,22 +1,25 @@
 .greet {
-  @include flex(column, flex-start, center);
-  @include size(60%, 100vh);
-
-  margin: 0 auto;
-  padding-top: 200px;
+  @include flex(column, center, center);
+  height: 100vh;
 
   text-align: center;
   color: $beige-color;
   line-height: $greet-line-height;
   width: 100%;
-  background: url("/src/assets/images/background.png");
+  background: url("/src/assets/images/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
   background-attachment: fixed;
 
   &::before {
     content: none;
+  }
+
+  .container {
+    @include flex(column, center, center);
+    padding: 30px 40px;
+    background-color: rgba($color: $dark-grey-color, $alpha: 0.6);
+    transform: translateY(-20%)
   }
 
   .greet__logo {
@@ -28,11 +31,11 @@
   .greet__title {
     margin-bottom: 40px;
 
-    font-size: 6vw;
+    font-size: 100px;
   }
 
   .greet__text {
-    font-size: 4vw;
+    font-size: 40px;
   }
 
   .text-typing {

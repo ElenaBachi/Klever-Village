@@ -1,19 +1,13 @@
-import SmallHouseSrc from "../src/assets/images/small-house.jpg";
-import MediumHouseSrc from "../src/assets/images/medium-house.jpg";
-import BigHouseSrc from "../src/assets/images/big-house.jpg";
-
-import BikeSrc from "../src/assets/images/quad-bike.jpeg";
-import BathhouseSrc from "../src/assets/images/bathhouse.jpg";
-import PlaygroundSrc from "../src/assets/images/playground.jpeg";
-
-import QuadBikeSrc from "../src/assets/images/bike.jpg";
-import BoatSrc from "../src/assets/images/boat.jpg";
-import KidsSrc from "../src/assets/images/kids.jpg";
-import GrillSrc from "../src/assets/images/grill.jpg";
-
-import LakeSrc from "../src/assets/images/lake.jpg";
-import FortressSrc from "../src/assets/images/fortress.jpg";
-import SanctuarySrc from "../src/assets/images/sanctuary.jpg";
+import {
+  SmallHouseGallery,
+  BigHouseGallery,
+  BikeSrc,
+  BathhouseSrc,
+  KidsSrc,
+  LakeSrc,
+  FortressSrc,
+  SanctuarySrc,
+} from "./images";
 
 export const navigationItems = [
   {
@@ -79,24 +73,24 @@ export const inventorys = [
         price: "7000",
       },
     ],
-    imgSrc: SmallHouseSrc,
+    imgSrcs: SmallHouseGallery,
   },
-  {
-    name: "medium-house",
-    title: "Средний дом",
-    description:
-      "На территории располагается один дом, который комфортно размещает до 4 человек",
-    options: [
-      "спальня с двухспальной кроватью",
-      "комната с двумя односпальными кроватями",
-      "кухня-гостиная со всем необходимым",
-      "санузел",
-    ],
-    accommodationOptions: {
-      price: "8000",
-    },
-    imgSrc: MediumHouseSrc,
-  },
+  // {
+  //   name: "medium-house",
+  //   title: "Средний дом",
+  //   description:
+  //     "На территории располагается один дом, который комфортно размещает до 4 человек",
+  //   options: [
+  //     "спальня с двухспальной кроватью",
+  //     "комната с двумя односпальными кроватями",
+  //     "кухня-гостиная со всем необходимым",
+  //     "санузел",
+  //   ],
+  //   accommodationOptions: {
+  //     price: "8000",
+  //   },
+  //   imgSrc: MediumHouseSrc,
+  // },
   {
     name: "big-house",
     title: "Большой дом ",
@@ -113,7 +107,7 @@ export const inventorys = [
       bed: "",
       price: "15 000",
     },
-    imgSrc: BigHouseSrc,
+    imgSrcs: BigHouseGallery,
   },
 ];
 
@@ -128,7 +122,7 @@ export const activitiesMainPage = [
   },
   {
     title: "Детям",
-    imgSrc: PlaygroundSrc,
+    imgSrc: KidsSrc,
   },
 ];
 
@@ -136,27 +130,27 @@ export const activities = [
   {
     title: "Аренда квадроцикла",
     text: "Для тех, кто любит активные прогулки и поездки, мы можем предложить аренду квадроцикла как в летний, так и в зимний период",
-    imgSrc: QuadBikeSrc,
+    imgSrc: SmallHouseGallery[0],
   },
   {
     title: "Прогулки на лодке/ сапах (под запрос гостей)",
     text: "",
-    imgSrc: BoatSrc,
+    imgSrc: SmallHouseGallery[0],
   },
   {
     title: "Детям",
     text: "Детская площадка, интернет-телевидение в номерах, подвижные игры на улице (бадминтон, мяч, батут и др)",
-    imgSrc: KidsSrc,
+    imgSrc: SmallHouseGallery[0],
   },
   {
     title: "Баня на дровах",
     text: "Большая баня с парной рассчитанная на 4 человек, где вы сможете расслабиться и провести приятно время за чашечкой горячего ароматного чая с приветственными угощениями (набор орешков, сушек и варенья). Бронировать баню необходимо не менее, чем за 4 часа до желаемого времени посещения)",
-    imgSrc: BathhouseSrc,
+    imgSrc: SmallHouseGallery[0],
   },
   {
     title: "Гриль зона",
     text: "Небольшая мангальная зона у каждого домика, где вы сможете приготовить любимые блюда. Мангал и шампуры предоставляются бесплатно, но если вдруг вы забыли взять с собой уголь и жидкость для розжига, вы можете приобрести их у нас",
-    imgSrc: GrillSrc,
+    imgSrc: SmallHouseGallery[0],
   },
 ];
 

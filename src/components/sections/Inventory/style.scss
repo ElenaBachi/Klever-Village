@@ -1,0 +1,14 @@
+.inventorys {
+  background-color: $beige-color;
+
+  .inventorys-title {
+    text-align: left;
+  }
+
+  h3 {
+    margin-bottom: $after-text-margin;
+
+    font-size: $text-font-size;
+    color: #8a9c76;
+  }
+}

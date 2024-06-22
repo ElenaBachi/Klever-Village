@@ -1,0 +1,64 @@
+.accommodation__item {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: stretch;
+
+  gap: 2vw;
+}
+
+.accommodation__content {
+  @include flex(column, flex-start, flex-start);
+  gap: 0.625rem;
+  padding: 10px 20px 0 20px;
+
+  .description {
+    li:first-child {
+      margin-top: 10px;
+    }
+
+    li:not(:last-child) {
+      padding-bottom: 0.625rem;
+    }
+
+    li:before {
+      content: "– ";
+      padding-right: 5px;
+    }
+  }
+
+  .accommodation__price {
+    padding: 8px 0 0 15px;
+
+    span {
+      font-weight: bolder;
+      font-size: calc($text-font-size + 1px);
+    }
+  }
+
+  .book {
+    width: 100%;
+    @include flex(row, flex-start, flex-start);
+
+    .book__btn {
+      width: 100%;
+      background-color: $khaki-color;
+
+      color: $white-color;
+    }
+  }
+}
+
+@media screen and (max-width: $mobile-max-width) {
+  .accommodation__item {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, auto);
+  }
+
+  .accommodation__content {
+    .accommodation__price {
+      span {
+        font-size: $mobile-text-font-size;
+      }
+    }
+  }
+}

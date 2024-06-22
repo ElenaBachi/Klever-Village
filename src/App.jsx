@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./components/pages/Home/_Home";
-import Activities from "./components/pages/Activities/_Activities";
-import Surroundings from "./components/pages/Surroundings/_Surroundings";
+import Home from "./components/pages/Home/Home";
+import Activities from "./components/pages/Activities/Activities";
+import SurroundingsPage from "./components/pages/SurroundingsPage/SurroundingsPage";
 import ScrollToTop from "./components/elements/scroll-to-top/_ScrollToTop";
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route path="/activities" element={<Activities />} />
-        <Route path="/surroundings" element={<Surroundings />} />
+        <Route path="/surroundings" element={<SurroundingsPage />} />
       </Routes>
     </BrowserRouter>
   );
