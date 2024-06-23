@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import "./style.scss";
-import { ReactComponent as PlusIcon } from "../../../../../assets/images/plus-icon.svg";
+import { ReactComponent as PlusIcon } from "../../../../../../public/images/plus-icon.svg";
 
 export default function ExtraItem({ extra, onClick, isOpen }) {
   const { title, items } = extra;
@@ -20,9 +20,9 @@ export default function ExtraItem({ extra, onClick, isOpen }) {
       >
         <div className="accordion-body" ref={itemRef}>
           <ul className="extras-list">
-            {items.map((item) => {
+            {items.map((item, index) => {
               return (
-                <li className="extras-item">
+                <li className="extras-item" key={index}>
                   <p>{item.name}</p>
                   <span>{item.price}</span>
                 </li>

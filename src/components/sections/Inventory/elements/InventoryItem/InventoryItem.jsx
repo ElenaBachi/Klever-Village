@@ -7,15 +7,15 @@ export default function InventoryItem(props) {
   const { name, title, description, options, accommodationOptions } = props;
   const isSmall = name === "small-house";
 
-  const optionsList = options.map((option) => {
-    return <li>{option}</li>;
+  const optionsList = options.map((option, index) => {
+    return <li key={index}>{option}</li>;
   });
 
   const accommodationOptionsList =
     accommodationOptions.length > 0
-      ? accommodationOptions.map((option) => {
+      ? accommodationOptions.map((option, index) => {
           return (
-            <li>
+            <li key={index}>
               {option.bed}
               <p className="accommodation__price">
                 стоимость <span>{option.price} &#8381;</span> в сутки

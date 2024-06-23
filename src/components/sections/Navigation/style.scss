@@ -1,0 +1,35 @@
+.main-nav {
+  @include flex(row, flex-start, center);
+  padding-right: 10px;
+
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 1199px) {
+  .menu-container {
+    order: 2;
+  }
+
+  .main-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    @include flex(column, flex-start, flex-start);
+
+    @include size(40%, 100%);
+    min-width: 320px;
+    padding: 0;
+    padding-top: 70px;
+
+    background-color: rgba($color: $dark-grey-color, $alpha: 0.6);
+    backdrop-filter: blur(2px);
+
+    transition: transform 0.4s linear;
+    transform: translateX(-110%);
+  }
+
+  .main-nav.active {
+    transform: translateX(0%);
+  }
+}

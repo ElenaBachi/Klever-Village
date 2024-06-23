@@ -6,7 +6,7 @@ import "./style.scss";
 
 export default function InventoryList() {
   const inventoryItems = inventorys.map((inventory) => {
-    return <InventoryItem {...inventory} />;
+    return <InventoryItem {...inventory} key={inventory.name} />;
   });
 
   return (

@@ -17,18 +17,9 @@ export default function InventoryItemGallery({ imgSrcs }) {
     <div className="accommodation__galery">
       <div className="slider-container">
         <Slider {...settings}>
-          {imgSrcs.map((src) => {
+          {imgSrcs.map((src, index) => {
             return (
-              <div
-                className="img-container"
-                style={{
-                  background: `url(${src})`,
-                  backgroundPosition: "center",
-                  backgroundSize: "cover",
-                  backgroundRepeat: "no-repeat",
-                  border: "1px solid red",
-                }}
-              >
+              <div className="img-container" key={index}>
                 <img src={src} alt="" />
               </div>
             );
