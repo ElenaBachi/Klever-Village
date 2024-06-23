@@ -39,7 +39,7 @@ export default function ReviewsSlider() {
       <Slider {...settings}>
         {reviews.map((review) => {
           return (
-            <div className="review-item">
+            <div className="review-item" key={review.id}>
               <p>{review.text}</p>
             </div>
           );

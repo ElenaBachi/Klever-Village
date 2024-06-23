@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import { ReactComponent as PlusIcon } from "../../../../../assets/images/plus-icon.svg";
+import { ReactComponent as PlusIcon } from "../../../../../../public/images/plus-icon.svg";
 
 import "./style.scss";
 
@@ -25,8 +25,8 @@ export default function SurroundingItem({ item, onClick, isOpen }) {
       >
         <div className="accordion-body" ref={itemRef}>
           <div className="surrounding-item__content">
-            {paragraphs.map((paragraph) => (
-              <p>{paragraph}</p>
+            {paragraphs.map((paragraph, index) => (
+              <p key={index}>{paragraph}</p>
             ))}
           </div>
         </div>

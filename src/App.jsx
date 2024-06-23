@@ -1,8 +1,8 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./components/pages/Home/Home";
-import Activities from "./components/pages/Activities/Activities";
+import ActivitiesPage from "./components/pages/ActivitiesPage/ActivitiesPage";
 import SurroundingsPage from "./components/pages/SurroundingsPage/SurroundingsPage";
-import ScrollToTop from "./components/elements/scroll-to-top/_ScrollToTop";
+import ScrollToTop from "./components/elements/ScrollToTop/ScrollToTop";
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
 
       <Routes>
         <Route exact path="/" element={<Home />} />
-        <Route path="/activities" element={<Activities />} />
+        <Route path="/activities" element={<ActivitiesPage />} />
         <Route path="/surroundings" element={<SurroundingsPage />} />
       </Routes>
     </BrowserRouter>

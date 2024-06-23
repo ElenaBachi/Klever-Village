@@ -1,6 +1,6 @@
 import React from "react";
 import Logo from "../../elements/Logo/Logo";
-import Navigation from "../../elements/navigation/_Navigation";
+import Navigation from "../../sections/Navigation/Navigation";
 import BookButton from "../../elements/BookButton/BookButton";
 
 import "./style.scss";

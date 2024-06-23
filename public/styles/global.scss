@@ -1,0 +1,130 @@
+@import "./abstracts/mixins.scss";
+@import "./abstracts/variables.scss";
+@import "./reset/reset.scss";
+
+#root {
+  font-family: "Montserrat", sans-serif;
+  font-size: $text-font-size;
+  line-height: $text-line-height;
+  font-weight: $light-font-weight;
+  color: $dark-grey-color;
+
+  * {
+    font-weight: inherit;
+  }
+
+  header {
+    font-size: $link-font-size;
+    color: $beige-color;
+  }
+
+  h2 {
+    font-size: $title-font-size;
+  }
+
+  h4 {
+    font-size: $title-font-size;
+  }
+}
+
+.wrap {
+  width: 90%;
+  @include margin(0, auto);
+}
+
+section {
+  position: relative;
+
+  @include padding(80px, 0);
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    @include size(42px, 6px);
+
+    background-color: $orange-color;
+  }
+}
+
+a {
+  &:hover {
+    color: $orange-color;
+  }
+}
+
+h2 {
+  @include margin($after-text-margin, 0);
+
+  text-align: center;
+}
+
+button {
+  font-size: 0.95vw;
+}
+
+@media screen and (max-width: 1000px) {
+  section {
+    @include padding(50px, 0);
+
+    &::before {
+      top: 40px;
+
+      @include size(35px, 4px);
+    }
+  }
+
+  h2 {
+    @include margin($after-text-margin-mobile, 0);
+  }
+}
+
+@media screen and (min-width: $mobile-max-width) and (max-width: 1199px) {
+  #root {
+    header {
+      font-size: $text-font-size;
+    }
+  }
+}
+
+@media screen and (max-width: $mobile-max-width) {
+  #root {
+    font-size: $mobile-text-font-size;
+    line-height: $mobile-text-line-height;
+
+    h2 {
+      font-size: $mobile-title-font-size;
+    }
+
+    h4 {
+      font-size: $mobile-title-font-size;
+    }
+  }
+
+  .wrap {
+    width: 94%;
+  }
+
+  section {
+    position: relative;
+
+    @include padding(25px, 0);
+
+    &::before {
+      top: 25px;
+
+      @include size(30px, 3px);
+    }
+  }
+
+  h2 {
+    @include margin($after-text-margin-mobile, 0);
+  }
+
+  button {
+    font-size: $link-font-size;
+  }
+}

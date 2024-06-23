@@ -1,5 +1,5 @@
 import React from "react";
-import Contacts from "../../elements/contacts/_Contacts";
+import Contacts from "../../elements/Contacts/Contacts";
 import Logo from "../../elements/Logo/Logo";
 
 import "./style.scss";

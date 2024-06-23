@@ -6,7 +6,7 @@ import Services from "../../sections/Services/Services";
 import Rules from "../../sections/Rules/Rules";
 import Extras from "../../sections/Extras/Extras";
 import Galery from "../../sections/Galery/Galery";
-import Suburbs from "../../sections/suburbs/_Suburbs";
+import Suburbs from "../../sections/Suburbs/Suburbs";
 import Reviews from "../../sections/Reviews/Reviews";
 
 import "./style.scss";

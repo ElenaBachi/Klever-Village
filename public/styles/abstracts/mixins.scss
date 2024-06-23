@@ -1,0 +1,25 @@
+@mixin padding($vertical, $horizontal) {
+  padding: $vertical $horizontal;
+}
+
+@mixin margin($vertical, $horizontal) {
+  margin: $vertical $horizontal;
+}
+
+@mixin size($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin flex($flex-direction, $justify-content, $align-items) {
+  display: flex;
+  flex-direction: $flex-direction;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}
+
+@mixin img($width, $height) {
+  @include size($width, $height);
+
+  object-fit: cover;
+}

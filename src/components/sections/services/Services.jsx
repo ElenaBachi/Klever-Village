@@ -1,6 +1,6 @@
 import React from "react";
 import ServicesList from "./elements/ServicesList/ServicesList";
-import Button from "../../elements/button/_Button";
+import Button from "../../elements/Button/Button";
 
 import "./style.scss";
 
