@@ -1,0 +1,22 @@
+.services {
+  background: #fff;
+
+  .wrap {
+    @include flex(column, space-between, center);
+    padding: 100px 0;
+  }
+
+  .services__title {
+    margin-bottom: 2.1875rem;
+  }
+
+  .services__text {
+    margin-bottom: 30px;
+
+    color: #8a9c76;
+  }
+
+  .book__btn {
+    @include size(200px, 50px);
+  }
+}

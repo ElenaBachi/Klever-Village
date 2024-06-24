@@ -1,0 +1,29 @@
+.about__galery {
+  grid-column: 2/3;
+  justify-self: self-end;
+
+  @include size(35vw, 35vh);
+
+  img {
+    @include img(100%, 100%);
+    object-fit: cover;
+
+    border-top-left-radius: 80px;
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 80px;
+  }
+}
+
+@media screen and (max-width: $mobile-max-width) {
+  .about__galery {
+    grid-row: 2/3;
+    grid-column: -1/1;
+    justify-self: center;
+
+    @include size(100%, 200px);
+
+    img {
+      border-radius: 0;
+    }
+  }
+}

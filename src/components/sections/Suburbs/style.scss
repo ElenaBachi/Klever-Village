@@ -1,0 +1,12 @@
+.suburbs {
+  background: #fff;
+
+  wrap {
+    @include flex(column, space-between, center);
+    padding: 100px 0;
+  }
+
+  .suburbs__title {
+    margin-bottom: 2.1875rem;
+  }
+}

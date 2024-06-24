@@ -51,6 +51,12 @@ section {
 }
 
 a {
+  color: $beige-color;
+
+  &:visited {
+    color: $beige-color;
+  }
+
   &:hover {
     color: $orange-color;
   }
