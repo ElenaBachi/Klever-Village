@@ -1,0 +1,15 @@
+.logo {
+  @include size(138px, auto);
+  margin-right: 20px;
+}
+
+a {
+  display: flex;
+}
+
+@media screen and (max-width: $mobile-max-width) {
+  .logo {
+    @include size(115px, auto);
+    margin-right: 0;
+  }
+}

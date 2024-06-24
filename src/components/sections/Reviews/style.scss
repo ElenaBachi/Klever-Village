@@ -1,0 +1,10 @@
+.reviews {
+  background-color: $beige-color;
+  text-align: justify;
+}
+
+@media screen and (max-width: $mobile-max-width) {
+  .reviews__title {
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,7 @@
+.rules__list {
+  @include flex(column, space-around, flex-start);
+
+  gap: 30px;
+
+  text-align: justify;
+}

@@ -1,0 +1,28 @@
+.services__item {
+  @include flex(column, center, center);
+  gap: 20px;
+
+  font-size: calc($text-font-size + 2px);
+}
+
+.services__img {
+  flex-grow: 1;
+
+  img {
+    display: block;
+    @include size(18vw, 18vw);
+
+    object-fit: cover;
+
+    border-radius: 50%;
+  }
+}
+
+@media screen and (max-width: $mobile-max-width) {
+  .services__item {
+    @include flex(column, center, center);
+    gap: $after-text-margin-mobile;
+
+    font-size: $mobile-text-font-size;
+  }
+}

@@ -1,0 +1,15 @@
+.rules__item {
+  span {
+    display: block;
+    font-size: calc($text-font-size + 3px);
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: $mobile-max-width) {
+  .rules__item {
+    span {
+      font-size: calc($mobile-text-font-size + 1.5px);
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.about__title {
+  text-align: left;
+}
+
+.about__text {
+  margin-bottom: $after-text-margin;
+
+  line-height: $text-line-height;
+}
+
+.about__content {
+  grid-column: 1/2;
+}
+
+@media screen and (max-width: $tablet-max-width) {
+  .about__text {
+    margin-bottom: $after-text-margin-mobile;
+  }
+}
