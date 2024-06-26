@@ -4,7 +4,7 @@
 
   text-align: center;
   color: $beige-color;
-  line-height: $greet-line-height;
+  line-height: $greet-text-font-size;
   width: 100%;
   background: url("/images/background.jpg");
   background-repeat: no-repeat;
@@ -17,7 +17,7 @@
 
   .container {
     @include flex(column, center, center);
-    padding: 30px 40px;
+    padding: 60px;
     background-color: rgba($color: $dark-grey-color, $alpha: 0.6);
     transform: translateY(-20%);
   }
@@ -31,11 +31,12 @@
   .greet__title {
     margin-bottom: 40px;
 
-    font-size: 100px;
+    font-size: $greet-title-font-size;
   }
 
   .greet__text {
-    font-size: 40px;
+    font-size: $greet-text-font-size;
+    line-height: $greet-text-font-size;
   }
 
   .text-typing {
@@ -45,7 +46,7 @@
       overflow: hidden;
       width: 0;
       animation: typing;
-      animation-duration: 2s;
+      animation-duration: 3s;
       animation-timing-function: steps(30, end);
       animation-fill-mode: forwards;
       color: $orange-color;
@@ -62,8 +63,28 @@
   }
 }
 
+@media screen and (max-width: $tablet-max-width) {
+  .greet {
+    line-height: $greet-text-font-size-tablet;
+
+    .greet__title {
+      font-size: $greet-title-font-size-tablet;
+    }
+
+    .greet__text {
+      font-size: $greet-text-font-size-tablet;
+    }
+
+    .container {
+      padding: 30px 15px;
+    }
+  }
+}
+
 @media screen and (max-width: $mobile-max-width) {
   .greet {
+    line-height: $greet-text-font-size-mobile;
+
     .greet__logo {
       @include size(200px, auto);
 
@@ -71,14 +92,25 @@
     }
 
     .greet__title {
-      margin-bottom: 0;
-
-      font-size: $greet-title-font-size;
+      margin-bottom: $after-text-margin-mobile;
+      font-size: $greet-title-font-size-mobile;
     }
 
     .greet__text {
-      font-size: 15px;
-      line-height: $after-text-margin;
+      font-size: $greet-text-font-size-mobile;
+    }
+
+    .container {
+      padding: 30px 0;
+    }
+
+    .text-typing {
+      p {
+        padding: 10px;
+        text-wrap: wrap;
+        width: 100%;
+        animation: none;
+      }
     }
   }
 }

@@ -1,11 +1,17 @@
+.about__content {
+  span {
+    display: block;
+    margin-bottom: $after-text-margin;
+    color: $orange-color;
+  }
+}
+
 .about__title {
   text-align: left;
 }
 
 .about__text {
   margin-bottom: $after-text-margin;
-
-  line-height: $text-line-height;
 }
 
 .about__content {

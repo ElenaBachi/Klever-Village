@@ -1,16 +1,15 @@
 .about__galery {
   grid-column: 2/3;
-  justify-self: self-end;
+  justify-self: center;
 
-  @include size(35vw, 35vh);
+  @include size(30vw, 27vw);
+  overflow: hidden;
+  border-top-left-radius: 80px;
+  border-top-right-radius: 80px;
+  border-bottom-right-radius: 80px;
 
   img {
     @include img(100%, 100%);
-    object-fit: cover;
-
-    border-top-left-radius: 80px;
-    border-top-right-radius: 80px;
-    border-bottom-right-radius: 80px;
   }
 }
 
