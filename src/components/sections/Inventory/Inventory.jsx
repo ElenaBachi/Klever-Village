@@ -8,10 +8,10 @@ export default function Inventory() {
     <section className="inventorys" id="inventorys">
       <div className="wrap">
         <h2 className="inventorys-title">Номерной фонд</h2>
-        <h3>
+        <p className="inventorys-text">
           уютные коттеджи в современном скандинавском стиле <br /> вместимостью
-          2-6 человек
-        </h3>
+          2 - 6 человек
+        </p>
 
         <InventoryList />
       </div>

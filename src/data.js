@@ -7,6 +7,10 @@ import {
   LakeSrc,
   FortressSrc,
   SanctuarySrc,
+  BoatSrc,
+  GrillSrc,
+  BathhouseMainSrc,
+  KidsMainSrc,
 } from "./images";
 
 export const navigationItems = [
@@ -117,12 +121,12 @@ export const activitiesMainPage = [
     imgSrc: BikeSrc,
   },
   {
-    title: "Баня на дровах",
-    imgSrc: BathhouseSrc,
-  },
-  {
     title: "Детям",
     imgSrc: KidsSrc,
+  },
+  {
+    title: "Баня на дровах",
+    imgSrc: BathhouseSrc,
   },
 ];
 
@@ -130,27 +134,27 @@ export const activities = [
   {
     title: "Аренда квадроцикла",
     text: "Для тех, кто любит активные прогулки и поездки, мы можем предложить аренду квадроцикла как в летний, так и в зимний период",
-    imgSrc: SmallHouseGallery[0],
+    imgSrc: BikeSrc,
   },
   {
-    title: "Прогулки на лодке/ сапах (под запрос гостей)",
+    title: "Прогулки на лодке/сапах (под запрос гостей)",
     text: "",
-    imgSrc: SmallHouseGallery[0],
+    imgSrc: BoatSrc,
   },
   {
     title: "Детям",
     text: "Детская площадка, интернет-телевидение в номерах, подвижные игры на улице (бадминтон, мяч, батут и др)",
-    imgSrc: SmallHouseGallery[0],
+    imgSrc: KidsMainSrc,
   },
   {
     title: "Баня на дровах",
     text: "Большая баня с парной рассчитанная на 4 человек, где вы сможете расслабиться и провести приятно время за чашечкой горячего ароматного чая с приветственными угощениями (набор орешков, сушек и варенья). Бронировать баню необходимо не менее, чем за 4 часа до желаемого времени посещения)",
-    imgSrc: SmallHouseGallery[0],
+    imgSrc: BathhouseMainSrc,
   },
   {
     title: "Гриль зона",
     text: "Небольшая мангальная зона у каждого домика, где вы сможете приготовить любимые блюда. Мангал и шампуры предоставляются бесплатно, но если вдруг вы забыли взять с собой уголь и жидкость для розжига, вы можете приобрести их у нас",
-    imgSrc: SmallHouseGallery[0],
+    imgSrc: GrillSrc,
   },
 ];
 

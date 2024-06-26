@@ -5,7 +5,7 @@ export default function RuleItem(props) {
 
   return (
     <li className="rules__item">
-      <span>{title}</span>
+      <h4>{title}</h4>
       <p>{description}</p>
     </li>
   );

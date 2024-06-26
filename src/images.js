@@ -22,13 +22,13 @@ export const BigHouseGallery = [
   "/images/small-house-8.jpg",
 ];
 
-
-export const BikeSrc = "/images/quad-bike.jpeg";
+export const BikeSrc = "/images/bike.jpg";
 export const BathhouseSrc = "/images/bathhouse.jpg";
 export const KidsSrc = "/images/kids.jpg";
 
-export const QuadBikeSrc = "/images/bike.jpg";
-// export const BoatSrc = "/images/kids.jpg";
+export const KidsMainSrc =  "/images/kids-main.jpg";
+export const BathhouseMainSrc =  "/images/bathhouse-main.jpg";
+export const BoatSrc = "/images/boat.jpg";
 export const GrillSrc = "/images/grill.jpg";
 
 export const LakeSrc = "/images/lake.jpg";

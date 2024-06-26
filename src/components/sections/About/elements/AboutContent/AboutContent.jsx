@@ -7,7 +7,7 @@ export default function AboutContent() {
     <div className="about__content">
       <h2 className="about__title">Klever Village</h2>
 
-      <h3>поселок Вистино, Ленинградская область</h3>
+      <span>поселок Вистино, Ленинградская область</span>
 
       <p className="about__text">
         - место для тех, кто ценит уединение и комфортный отдых на природе

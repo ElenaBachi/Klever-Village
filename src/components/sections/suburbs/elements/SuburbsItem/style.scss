@@ -1,28 +1,30 @@
 .suburbs__item {
-  @include flex(column, center, center);
-  gap: 20px;
+  display: grid;
+  grid-template-rows: 3fr 1fr;
+  justify-items: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
 
-  font-size: calc($text-font-size + 2px);
+  p {
+    font-size: $font-size-body-18;
+    text-wrap: wrap;
+    text-align: center;
+  }
 }
 
 .suburbs__img {
-  flex-grow: 1;
+  @include size(15vw, 15vw);
+  border-radius: 50%;
+  overflow: hidden;
 
   img {
-    display: block;
-    @include size(18vw, 18vw);
-
-    object-fit: cover;
-
-    border-radius: 50%;
+    @include img(100%, 100%);
   }
 }
 
 @media screen and (max-width: $mobile-max-width) {
-  .suburbs__item {
-    @include flex(column, center, center);
-    gap: $after-text-margin-mobile;
-
-    font-size: $mobile-text-font-size;
+  .suburbs__img {
+    @include size(25vw, 25vw);
   }
 }

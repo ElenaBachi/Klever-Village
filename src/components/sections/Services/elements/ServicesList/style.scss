@@ -1,15 +1,16 @@
 .services__list {
-  @include flex(row, space-between, center);
-
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   width: 80%;
   margin: 0 auto;
+  gap: 20px;
 }
 
 @media screen and (max-width: $mobile-max-width) {
   .services__list {
-    @include flex(column, space-between, center);
-    gap: $after-text-margin-mobile;
-
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
     width: 100%;
   }
 }
