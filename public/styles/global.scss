@@ -4,53 +4,24 @@
 
 #root {
   font-family: "Montserrat", sans-serif;
-  font-size: $text-font-size;
-  line-height: $text-line-height;
   font-weight: $light-font-weight;
   color: $dark-grey-color;
+  overflow: hidden;
 
   * {
     font-weight: inherit;
-  }
-
-  header {
-    font-size: $link-font-size;
-    color: $beige-color;
-  }
-
-  h2 {
-    font-size: $title-font-size;
-  }
-
-  h4 {
-    font-size: $title-font-size;
   }
 }
 
 .wrap {
   width: 90%;
   @include margin(0, auto);
+  padding: 40px 0;
 }
 
-section {
-  position: relative;
-
-  @include padding(80px, 0);
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 60px;
-    left: 50%;
-    transform: translateX(-50%);
-
-    @include size(42px, 6px);
-
-    background-color: $orange-color;
-  }
-}
-
+header nav,
 a {
+  font-size: $font-size-link;
   color: $beige-color;
 
   &:visited {
@@ -63,13 +34,47 @@ a {
 }
 
 h2 {
-  @include margin($after-text-margin, 0);
+  margin-bottom: $after-text-margin;
 
   text-align: center;
+  font-size: $font-size-title;
+  line-height: $font-size-title;
+}
+
+h3,
+h4 {
+  margin-bottom: $after-text-margin;
+  
+  font-size: $font-size-subtitle;
+  line-height: $font-size-subtitle;
+}
+
+p,
+span {
+  font-size: $font-size-body-16;
+  line-height: $line-height-body;
 }
 
 button {
-  font-size: 0.95vw;
+  font-size: $font-size-body-16;
+}
+
+section {
+  position: relative;
+
+  @include padding(80px, 0);
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    @include size(42px, 6px);
+
+    background-color: $orange-color;
+  }
 }
 
 @media screen and (max-width: 1000px) {
@@ -84,34 +89,44 @@ button {
   }
 
   h2 {
-    @include margin($after-text-margin-mobile, 0);
+    margin-bottom: $after-text-margin-mobile;
   }
 }
 
-@media screen and (min-width: $mobile-max-width) and (max-width: 1199px) {
-  #root {
-    header {
-      font-size: $text-font-size;
-    }
+@media screen and (max-width: 1199px) {
+  header nav,
+  a {
+    font-size: $font-size-body-18;
   }
 }
 
 @media screen and (max-width: $mobile-max-width) {
-  #root {
-    font-size: $mobile-text-font-size;
-    line-height: $mobile-text-line-height;
-
-    h2 {
-      font-size: $mobile-title-font-size;
-    }
-
-    h4 {
-      font-size: $mobile-title-font-size;
-    }
-  }
-
   .wrap {
     width: 94%;
+    padding: 20px 0;
+  }
+
+  h2 {
+    margin-bottom: $after-text-margin-mobile;
+
+    font-size: $font-size-title-mobile;
+    line-height: $font-size-title-mobile;
+  }
+
+  h3,
+  h4 {
+    font-size: $font-size-subtitle-mobile;
+    line-height: $font-size-subtitle-mobile;
+  }
+
+  p,
+  span {
+    font-size: $font-size-body-18;
+    line-height: 20px;
+  }
+
+  button {
+    font-size: $font-size-body-16;
   }
 
   section {
@@ -120,17 +135,9 @@ button {
     @include padding(25px, 0);
 
     &::before {
-      top: 25px;
+      top: 22.5px;
 
       @include size(30px, 3px);
     }
-  }
-
-  h2 {
-    @include margin($after-text-margin-mobile, 0);
-  }
-
-  button {
-    font-size: $link-font-size;
   }
 }

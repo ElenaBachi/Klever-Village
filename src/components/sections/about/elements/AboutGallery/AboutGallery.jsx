@@ -1,5 +1,5 @@
 import React from "react";
-import ImgSrc from "../../../../../../public/images/about-img-2.jpg";
+import ImgSrc from "../../../../../../public/images/about-img.jpg";
 
 import "./style.scss";
 

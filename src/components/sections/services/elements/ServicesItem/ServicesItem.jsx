@@ -9,7 +9,7 @@ export default function ServicesItem(props) {
         <img src={imgSrc} alt={title} />
       </div>
 
-      <h3>{title}</h3>
+      <p>{title}</p>
     </li>
   );
 }

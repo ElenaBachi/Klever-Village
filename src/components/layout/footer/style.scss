@@ -15,7 +15,7 @@
       line-height: 30px;
 
       &:hover {
-        color: $beige-color
+        color: $beige-color;
       }
     }
   }
@@ -59,23 +59,66 @@
 
 @media screen and (max-width: $mobile-max-width) {
   .footer {
-    padding: 10px 0;
+    padding: 10px 30px;
 
     .wrap {
-      grid-template-columns: 1fr;
-      grid-template-rows: repeat(3, 1fr);
-      gap: 15px;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: repeat(2, 1fr);
+      justify-items: start;
+      gap: 10px;
     }
 
     .logo {
-      @include size(25vw, auto);
+      grid-column: 1/2;
+      grid-row: 1/2;
+      @include size(150px, auto);
+    }
+
+    .contacts {
+      grid-column: 2/3;
+      grid-row: 1/2;
+      justify-self: end;
+      // gap: 15px;
     }
 
     .address {
-      position: relative;
+      grid-column: -1/1;
+      grid-row: 2/3;
+      justify-self: start;
+      margin-left: 45px;
+    }
+  }
+}
 
-      margin-left: 5px;
-      justify-self: center;
+@media screen and (max-width: $mobile-max-width) {
+  .footer {
+    padding: 10px 30px;
+
+    .wrap {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: repeat(2, 1fr);
+      justify-items: start;
+      gap: 10px;
+    }
+
+    .logo {
+      grid-column: 1/2;
+      grid-row: 1/2;
+      @include size(150px, auto);
+    }
+
+    .contacts {
+      grid-column: 2/3;
+      grid-row: 1/2;
+      justify-self: end;
+      // gap: 15px;
+    }
+
+    .address {
+      grid-column: -1/1;
+      grid-row: 2/3;
+      justify-self: start;
+      margin-left: 45px;
     }
   }
 }

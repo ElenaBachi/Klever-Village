@@ -5,10 +5,9 @@
     text-align: left;
   }
 
-  h3 {
+  .inventorys-text {
     margin-bottom: $after-text-margin;
-
-    font-size: $text-font-size;
-    color: #8a9c76;
+    color: $orange-color;
+    font-size: $font-size-title-mobile;
   }
 }

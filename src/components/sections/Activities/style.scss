@@ -16,16 +16,10 @@
   }
 
   .activities__list {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 16px;
-    width: 80%;
+    @include flex (column, center, center);
+    gap: 20px;
+    width: 85%;
     margin: 0 auto;
-
-    li {
-      height: 300px;
-      min-height: fit-content;
-    }
   }
 }
 

@@ -21,7 +21,7 @@
 
 @media screen and (max-width: $mobile-max-width) {
   .header {
-    @include size(100%, 50px);
+    @include size(100%, 60px);
     @include padding(0, 10px);
   }
 }

@@ -7,9 +7,14 @@
 }
 
 .accommodation__content {
+  align-self: center;
   @include flex(column, flex-start, flex-start);
   gap: 0.625rem;
   padding: 10px 20px 0 20px;
+
+  h4 {
+    margin-bottom: $after-text-margin;
+  }
 
   .description {
     li:first-child {
@@ -30,12 +35,12 @@
     padding: 8px 0 0 15px;
 
     span {
-      font-weight: bolder;
-      font-size: calc($text-font-size + 1px);
+      font-size: $font-size-body-18;
     }
   }
 
   .book {
+    margin-top: $after-text-margin;
     width: 100%;
     @include flex(row, flex-start, flex-start);
 
@@ -48,17 +53,9 @@
   }
 }
 
-@media screen and (max-width: $mobile-max-width) {
+@media screen and (max-width: $gallery-adaptive-max-width) {
   .accommodation__item {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, auto);
-  }
-
-  .accommodation__content {
-    .accommodation__price {
-      span {
-        font-size: $mobile-text-font-size;
-      }
-    }
   }
 }

@@ -9,9 +9,8 @@ export default function Greet() {
         <Logo className="logo greet__logo" />
 
         <h1 className="greet__title">Klever Village </h1>
-        <p className="greet__text">место для тех, кто любит</p>
         <div className="text-typing">
-          <p className="greet__text"> быть ближе к природе</p>
+          <p className="greet__text"> подальше от города - поближе к себе</p>
         </div>
       </div>
     </section>

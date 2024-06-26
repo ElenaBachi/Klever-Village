@@ -6,9 +6,8 @@
 
 .book__btn,
 .details__btn {
-  @include padding(10px, 4vw);
+  @include padding(20px, 30px);
 
-  font-size: 0.75rem;
   color: $khaki-color;
 
   background-color: $beige-color;
@@ -21,10 +20,21 @@
   }
 }
 
+.details__btn {
+  @include padding(20px, 50px);
+}
+
 @media screen and (max-width: 1199px) {
   .book {
     margin-left: auto;
 
     order: 1;
+  }
+}
+
+@media screen and (max-width: $mobile-max-width) {
+  .book__btn,
+  .details__btn {
+    @include padding(15px, 20px);
   }
 }
