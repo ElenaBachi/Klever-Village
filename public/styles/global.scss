@@ -19,16 +19,15 @@
   padding: 40px 0;
 }
 
-header nav,
-a {
+header nav {
   font-size: $font-size-link;
   color: $beige-color;
 
-  &:visited {
+  a:visited {
     color: $beige-color;
   }
 
-  &:hover {
+  a:hover {
     color: $orange-color;
   }
 }
@@ -44,7 +43,7 @@ h2 {
 h3,
 h4 {
   margin-bottom: $after-text-margin;
-  
+
   font-size: $font-size-subtitle;
   line-height: $font-size-subtitle;
 }
@@ -93,17 +92,22 @@ section {
   }
 }
 
-@media screen and (max-width: 1199px) {
-  header nav,
-  a {
+@media screen and (max-width: 1200px) {
+  header nav {
     font-size: $font-size-body-18;
+  }
+}
+
+@media screen and (max-width: $tablet-max-width) {
+  .wrap {
+    padding: 20px 0;
+    padding-bottom: 0;
   }
 }
 
 @media screen and (max-width: $mobile-max-width) {
   .wrap {
     width: 94%;
-    padding: 20px 0;
   }
 
   h2 {
@@ -121,8 +125,8 @@ section {
 
   p,
   span {
-    font-size: $font-size-body-18;
-    line-height: 20px;
+    font-size: $font-size-body-16;
+    line-height: 21px;
   }
 
   button {

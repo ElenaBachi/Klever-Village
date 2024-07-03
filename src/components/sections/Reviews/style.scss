@@ -4,6 +4,10 @@
 }
 
 @media screen and (max-width: $mobile-max-width) {
+  .reviews {
+    padding-bottom: 80px;
+  }
+
   .reviews__title {
     margin-bottom: 20px;
   }

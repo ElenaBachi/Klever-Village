@@ -12,6 +12,7 @@
     align-items: center;
 
     a {
+      font-size: $font-size-body-18;
       line-height: 30px;
 
       &:hover {
@@ -66,6 +67,11 @@
       grid-template-rows: repeat(2, 1fr);
       justify-items: start;
       gap: 10px;
+
+      a {
+        font-size: $font-size-body-16;
+        line-height: $font-size-title-mobile;
+      }
     }
 
     .logo {

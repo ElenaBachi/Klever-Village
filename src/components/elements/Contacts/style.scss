@@ -1,6 +1,6 @@
 .contacts {
   @include flex(row, space-between, center);
-  gap: 2px;
+  gap: 4px;
 
   li:not(:first-child) path {
     stroke-width: 2px;
@@ -30,7 +30,7 @@
   }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1200px) {
   .main-nav .contacts {
     gap: 15px;
     padding: 20px;

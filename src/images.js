@@ -8,28 +8,40 @@ export const SmallHouseGallery = [
   "/images/small-house-7.jpg",
   "/images/small-house-8.jpg",
   "/images/small-house-9.jpg",
+  "/images/small-house-10.jpg",
 ];
 
 export const BigHouseGallery = [
   "/images/big-house-1.jpg",
   "/images/big-house-2.jpg",
-  "/images/big-house-3.jpg",
-  "/images/big-house-4.jpg",
-  "/images/big-house-5.jpg",
-  "/images/big-house-6.jpg",
-  "/images/big-house-7.jpg",
-  "/images/small-house-7.jpg",
-  "/images/small-house-8.jpg",
 ];
 
-export const BikeSrc = "/images/bike.jpg";
+export const BathhouseGallery = [
+  "/images/bathhouse-gallery-1.jpg",
+  "/images/bathhouse-gallery-2.jpg",
+  "/images/bathhouse-gallery-3.jpg",
+  "/images/bathhouse-gallery-4.jpg",
+  "/images/bathhouse-gallery-5.jpg",
+  "/images/bathhouse-gallery-6.jpg",
+  "/images/bathhouse-gallery-7.jpg",
+];
+
+export const GrillGallery = [
+  "/images/grill-1.jpg",
+  "/images/grill-2.jpg",
+  "/images/grill-3.jpg",
+];
+
+export const BikeSrc = ["/images/bike.jpg"];
+export const KidsMainSrc = [
+  "/images/kids-main.jpg",
+  "/images/kids-main-tablet.jpg",
+  "/images/kids-main-mobile.jpg",
+];
+export const BoatSrc = ["/images/boat.jpg"];
+
 export const BathhouseSrc = "/images/bathhouse.jpg";
 export const KidsSrc = "/images/kids.jpg";
-
-export const KidsMainSrc =  "/images/kids-main.jpg";
-export const BathhouseMainSrc =  "/images/bathhouse-main.jpg";
-export const BoatSrc = "/images/boat.jpg";
-export const GrillSrc = "/images/grill.jpg";
 
 export const LakeSrc = "/images/lake.jpg";
 export const FortressSrc = "/images/fortress.jpg";

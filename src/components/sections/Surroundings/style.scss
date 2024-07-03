@@ -1,11 +1,10 @@
 .surroundings {
   margin-top: 70px;
-
   background: $beige-color;
 
-  wrap {
+  .wrap {
     @include flex(column, space-between, center);
-    padding: 100px 0;
+    padding: 50px 0;
   }
 
   .surroundings__title {
@@ -19,23 +18,33 @@
     margin-bottom: 30px;
     text-align: center;
     font-size: $font-size-title-mobile;
+    line-height: 24px;
   }
 }
 
 @media screen and (max-width: $mobile-max-width) {
   .surroundings {
     margin-top: 50px;
+    padding-top: 40px;
+
+    &::before {
+      top: 40px;
+    }
+
+    .wrap {
+      @include flex(column, space-between, center);
+      padding: 20px 0;
+    }
 
     .surroundings__title {
       margin-bottom: $after-text-margin-mobile;
     }
 
     .surroundings__description {
-      display: block;
       width: 90%;
-      margin: 0 auto;
-      margin-bottom: $after-text-margin;
-      text-align: justify;
+      font-size: $font-size-body-18;
+      line-height: 21px;
     }
   }
 }
+

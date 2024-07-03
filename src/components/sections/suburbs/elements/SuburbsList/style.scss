@@ -8,9 +8,8 @@
 
 @media screen and (max-width: $mobile-max-width) {
   .suburbs__list {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
+    display: flex;
+    flex-direction: column;
     width: 100%;
   }
 }

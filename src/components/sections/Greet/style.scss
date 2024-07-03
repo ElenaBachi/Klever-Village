@@ -94,6 +94,8 @@
     .greet__title {
       margin-bottom: $after-text-margin-mobile;
       font-size: $greet-title-font-size-mobile;
+      line-height: 45px;
+      margin-bottom: 0;
     }
 
     .greet__text {
