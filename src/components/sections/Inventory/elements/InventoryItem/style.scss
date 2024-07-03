@@ -57,5 +57,9 @@
   .accommodation__item {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, auto);
+
+    h4 {
+      font-size: $font-size-title-mobile;
+    }
   }
 }

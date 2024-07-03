@@ -62,7 +62,7 @@ export default function Contacts() {
         </a>
       </li>
       <li>
-        <a href="https://t.me/" target="_blank">
+        <a href="https://t.me/klevervillage" target="_blank">
           <svg
             width="30"
             height="30"
@@ -82,7 +82,7 @@ export default function Contacts() {
         </a>
       </li>
       <li>
-        <a href="https://vk.com/" target="_blank">
+        <a href="https://vk.com/klevervillage" target="_blank">
           <svg
             width="32"
             height="32"

@@ -4,7 +4,7 @@ import "./style.scss";
 
 export default function Greet() {
   return (
-    <section className="greet">
+    <section className="greet" id="greet">
       <div className="container">
         <Logo className="logo greet__logo" />
 

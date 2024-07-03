@@ -1,0 +1,91 @@
+.galery {
+  @include size(40vw, 40vw);
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+
+  .slider-container {
+    @include size(100%, 100%);
+
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .slick-slider {
+      position: relative;
+      @include size(100%, 100%);
+      overflow: hidden;
+    }
+
+    .slick-slider div {
+      @include size(100%, 100%);
+    }
+
+    img {
+      @include img(100%, 100%);
+    }
+
+    .slick-arrow {
+      position: absolute;
+      top: 50%;
+      width: 45px;
+      height: 45px;
+      z-index: 10;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 45px;
+        height: 45px;
+        background-color: $beige-color;
+        border-radius: 50%;
+        opacity: 10;
+        background-image: url("/images/next.svg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 25px 30px;
+        transition: all 0.3s ease-in-out;
+      }
+
+      &:hover {
+        &::before {
+          background-color: rgba($color: $beige-color, $alpha: 0.6);
+        }
+      }
+    }
+
+    button.slick-arrow.slick-prev {
+      left: 2%;
+
+      &::before {
+        transform: rotate(180deg);
+      }
+    }
+
+    button.slick-arrow.slick-next {
+      right: 2%;
+    }
+  }
+}
+
+@media screen and (max-width: $mobile-max-width) {
+  .galery {
+    @include size(50vw, 50vw);
+    .slider-container {
+      .slick-arrow {
+        width: 35px;
+        height: 35px;
+
+        &::before {
+          width: 35px;
+          height: 35px;
+          background-size: 20px 25px;
+        }
+      }
+    }
+  }
+}

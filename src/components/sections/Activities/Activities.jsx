@@ -3,7 +3,7 @@ import { activities } from "../../../data";
 import ActivityItem from "./elements/ActivityItem/ActivityItem";
 import "./style.scss";
 
-export default function ActivitiesList() {
+export default function Activities() {
   return (
     <section className="activities">
       <div className="wrap">
@@ -17,7 +17,7 @@ export default function ActivitiesList() {
 
         <ul className="activities__list">
           {activities.map((activity) => {
-            return <ActivityItem {...activity} />;
+            return <ActivityItem {...activity} key={activity.id}/>;
           })}
         </ul>
       </div>

@@ -19,9 +19,10 @@
     padding-bottom: 0;
 
     .wrap {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: repeat(2, auto);
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 0;
+      width: 100%;
     }
 
     h3 {

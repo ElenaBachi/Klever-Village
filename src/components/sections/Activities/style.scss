@@ -1,7 +1,11 @@
 .activities {
   margin-top: 70px;
-
   background: $beige-color;
+
+  .wrap {
+    @include flex(column, space-between, center);
+    padding: 50px 0;
+  }
 
   .activities__title {
     margin-bottom: $after-text-margin;
@@ -13,12 +17,14 @@
     margin: 0 auto;
     margin-bottom: 30px;
     text-align: center;
+    font-size: $font-size-title-mobile;
+    line-height: 24px;
   }
 
   .activities__list {
-    @include flex (column, center, center);
-    gap: 20px;
-    width: 85%;
+    @include flex(column, center, center);
+    gap: 10px;
+    width: 100%;
     margin: 0 auto;
   }
 }
@@ -26,26 +32,25 @@
 @media screen and (max-width: $mobile-max-width) {
   .activities {
     margin-top: 50px;
+    padding-top: 40px;
+
+    &::before {
+      top: 40px;
+    }
 
     .activities__title {
       margin-bottom: $after-text-margin-mobile;
     }
 
     .activities__description {
-      display: block;
       width: 90%;
-      margin: 0 auto;
-      margin-bottom: $after-text-margin;
-      text-align: justify;
+      font-size: $font-size-body-18;
+      line-height: 21px;
     }
 
     .activities__list {
       width: 100%;
-
-      li {
-        height: 300px;
-        min-height: fit-content;
-      }
+      gap: 40px;
     }
   }
 }
