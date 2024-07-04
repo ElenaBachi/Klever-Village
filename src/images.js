@@ -35,7 +35,7 @@ export const GrillGallery = [
 export const BikeSrc = [
   "/images/bike.jpg",
   "/images/bike-tablet.jpg",
-  "/images/bike-mobile.jpg",
+  "/images/bike-tablet.jpg",
 ];
 
 export const KidsMainSrc = [
