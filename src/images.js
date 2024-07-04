@@ -32,13 +32,22 @@ export const GrillGallery = [
   "/images/grill-3.jpg",
 ];
 
-export const BikeSrc = ["/images/bike.jpg"];
+export const BikeSrc = [
+  "/images/bike.jpg",
+  "/images/bike-tablet.jpg",
+  "/images/bike-mobile.jpg",
+];
+
 export const KidsMainSrc = [
   "/images/kids-main.jpg",
   "/images/kids-main-tablet.jpg",
   "/images/kids-main-mobile.jpg",
 ];
-export const BoatSrc = ["/images/boat.jpg"];
+export const BoatSrc = [
+  "/images/boat.jpg",
+  "/images/boat-tablet.jpg",
+  "/images/boat-mobile.jpg",
+];
 
 export const BathhouseSrc = "/images/bathhouse.jpg";
 export const KidsSrc = "/images/kids.jpg";

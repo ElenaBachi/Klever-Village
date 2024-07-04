@@ -23,7 +23,8 @@ header nav {
   font-size: $font-size-link;
   color: $beige-color;
 
-  a:visited {
+  a:visited,
+  a:active {
     color: $beige-color;
   }
 
