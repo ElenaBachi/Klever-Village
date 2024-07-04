@@ -76,12 +76,16 @@
 @media screen and (max-width: $gallery-adaptive-max-width) {
   .accommodation__galery {
     justify-self: center;
-    @include size(55vw, 55vw);
+    @include size(50vh, 50vh);
   }
 }
 
 @media screen and (max-width: $mobile-max-width) {
   .accommodation__galery {
+    @include size(100%, 50vh);
+    border-radius: 20px;
+    box-shadow: none;
+
     .slick-arrow {
       width: 35px;
       height: 35px;

@@ -72,9 +72,18 @@
   }
 }
 
+@media screen and (max-width: $gallery-adaptive-max-width) {
+  .galery {
+    @include size(40vh, 40vh);
+  }
+}
+
 @media screen and (max-width: $mobile-max-width) {
   .galery {
-    @include size(50vw, 50vw);
+    @include size(94vw, 45vh);
+    border-radius: 20px;
+    box-shadow: none;
+
     .slider-container {
       .slick-arrow {
         width: 35px;
