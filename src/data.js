@@ -11,6 +11,7 @@ import {
   GrillGallery,
   BathhouseGallery,
   KidsMainSrc,
+  BikeMainSrc,
 } from "./images";
 
 export const navigationItems = [
@@ -118,7 +119,7 @@ export const inventorys = [
 export const activitiesMainPage = [
   {
     title: "Аренда квадроцикла",
-    imgSrc: BikeSrc[0],
+    imgSrc: BikeSrc,
   },
   {
     title: "Детям",
@@ -153,7 +154,7 @@ export const activities = [
     id: "bike",
     title: "Аренда квадроцикла",
     text: "Для тех, кто любит активные прогулки и поездки, мы можем предложить аренду квадроцикла как в летний, так и в зимний период",
-    imgSrc: BikeSrc,
+    imgSrc: BikeMainSrc,
   },
   {
     id: "boats",

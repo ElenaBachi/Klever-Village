@@ -14,11 +14,7 @@ export default function ActivityItem(props) {
         <ActivityItemGallery {...props} />
       ) : (
         <div className="galery">
-          <picture>
-            <source media="(min-width: 1200px)" srcSet={imgSrc[0]} />
-            <source media="(min-width: 768px)" srcSet={imgSrc[1]} />
-            <img src={imgSrc[2]} alt={title} />
-          </picture>
+          <img src={imgSrc[0]} alt={title} />
         </div>
       )}
 

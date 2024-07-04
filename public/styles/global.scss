@@ -23,11 +23,6 @@ header nav {
   font-size: $font-size-link;
   color: $beige-color;
 
-  a:visited,
-  a:active {
-    color: $beige-color;
-  }
-
   a:hover {
     color: $orange-color;
   }
@@ -75,6 +70,10 @@ section {
 
     background-color: $orange-color;
   }
+}
+
+img {
+  @include img(100%, 100%);
 }
 
 @media screen and (max-width: 1000px) {

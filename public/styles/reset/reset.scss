@@ -12,8 +12,10 @@ a {
   margin: 0;
   padding: 0;
   text-decoration: none;
+  color: $beige-color;
 
-  &:visited {
+  &:visited,
+  a:active {
     text-decoration: none;
     font: inherit;
     color: inherit;

@@ -16,6 +16,10 @@
     }
   }
 
+  img {
+    @include img(100%, 100%);
+  }
+
   .content {
     padding: 0 100px;
     margin-bottom: 25%;
@@ -51,7 +55,7 @@
         justify-self: center;
       }
     }
-  
+
     &:nth-child(even) {
       .galery {
         justify-self: center;
@@ -66,7 +70,7 @@
         text-align: center;
         font-size: $font-size-subtitle-mobile;
       }
-  
+
       p {
         font-size: $font-size-body-16;
       }
