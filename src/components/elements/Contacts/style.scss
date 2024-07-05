@@ -46,3 +46,14 @@
     }
   }
 }
+
+@media screen and (max-width: $mobile-max-width) {
+  .footer {
+    .contacts {
+      svg {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+}

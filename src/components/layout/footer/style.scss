@@ -14,7 +14,7 @@
     padding-bottom: 30px;
 
     a {
-      font-size: $font-size-body-18;
+      font-size: $font-size-subtitle-mobile;
       line-height: 30px;
     }
 
@@ -22,10 +22,9 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      font-size: $font-size-subtitle-mobile;
-      transition: all 0.4s ease;
 
       &:hover {
+        transform: translateY(-1.5px);
         color: $orange-color;
       }
     }
@@ -41,8 +40,8 @@
     grid-column: -1/1;
     grid-row: 2/3;
     margin: 0 auto;
+    padding-left: 40px;
     transition: 0.7s;
-    border-bottom: 1px solid transparent;
     display: flex;
     flex-direction: row;
     gap: 10px;
@@ -55,7 +54,7 @@
       content: "";
       position: absolute;
       top: 50%;
-      left: -45px;
+      left: 0;
       transform: translateY(-50%);
       @include size(45px, 45px);
 
@@ -67,8 +66,6 @@
     }
 
     &:hover {
-      border-bottom: 1px solid $beige-color;
-
       &::before {
         transform: translateY(-65%);
       }
@@ -76,30 +73,81 @@
   }
 }
 
-@media screen and (max-width: $mobile-max-width) {
+@media screen and (max-width: 900px) {
+  .footer {
+    text-wrap: wrap;
+    padding: 30px;
+
+    .wrap {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      row-gap: 30px;
+      justify-items: end;
+      padding-bottom: 30px;
+
+      .contacts {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        justify-self: left;
+      }
+
+      .logo {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        margin: 0;
+      }
+
+      .tel-num {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        justify-self: left;
+      }
+    }
+
+    .address {
+      grid-column: 2/3;
+      grid-row: 2/3;
+      flex-direction: column;
+      gap: 0;
+      margin: 0;
+      padding: 0;
+      padding-left: 45px;
+      text-align: right;
+    }
+  }
+}
+
+@media screen and (max-width: 680px) {
   .footer {
     padding: 15px 0;
 
     .wrap {
       display: flex;
       flex-direction: column;
-      gap: 25px;
 
       a {
-        font-size: $font-size-body-16;
+        font-size: $font-size-body-18;
         line-height: $font-size-title-mobile;
+      }
+
+      .tel-num {
+        order: -1;
+        font-size: $font-size-title-mobile;
+        line-height: 30px;
       }
     }
 
     .logo {
-      @include size(150px, auto);
+      @include size(205px, auto);
+      margin: 0;
     }
 
     .address {
       display: flex;
       flex-direction: column;
-      text-align: center;
+      text-align: justify;
       gap: 0;
+      padding-left: 50px;
     }
   }
 }

@@ -10,7 +10,7 @@ export default function Footer() {
       <div className="wrap">
         <Contacts />
         <Logo />
-        <a href="tel:79812710703" className="tel-num">
+        <a href="tel:+79812710703" className="tel-num">
           Позвоните нам <br /> +7 981 271-07-03
         </a>
 
