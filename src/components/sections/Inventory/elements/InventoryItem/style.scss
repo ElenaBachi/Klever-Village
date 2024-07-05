@@ -9,12 +9,8 @@
 .accommodation__content {
   align-self: center;
   @include flex(column, flex-start, flex-start);
-  gap: 0.625rem;
+  gap: 15px;
   padding: 10px 20px 0 20px;
-
-  h4 {
-    margin-bottom: $after-text-margin;
-  }
 
   .description {
     li:first-child {
@@ -57,9 +53,19 @@
   .accommodation__item {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, auto);
+  }
+}
+
+@media screen and (max-width: $mobile-max-width) {
+  .accommodation__item {
+    gap: 35px;
 
     h4 {
-      font-size: $font-size-title-mobile;
+      margin: 0;
     }
+  }
+
+  .accommodation__content {
+    padding: 0;
   }
 }

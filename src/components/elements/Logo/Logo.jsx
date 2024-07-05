@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import LogoSrc from "../../../../public/images/logo-kv.svg?react";
+import LogoSrc from "../../../../public/icons/logo-kv.svg?react";
 import "./style.scss";
 
 export default function Logo() {

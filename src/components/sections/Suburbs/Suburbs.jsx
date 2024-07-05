@@ -6,7 +6,7 @@ import "./style.scss";
 
 export default function Suburbs() {
   return (
-    <section className="suburbs" id="suburbs">
+    <section className="suburbs" id="surroundings">
       <div className="wrap">
         <h2 className="suburbs__title">Окрестности</h2>
         <SuburbsList />

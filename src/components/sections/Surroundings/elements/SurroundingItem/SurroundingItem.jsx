@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import { ReactComponent as PlusIcon } from "../../../../../../public/images/plus-icon.svg";
+import { ReactComponent as PlusIcon } from "../../../../../../public/icons/plus-icon.svg";
 
 import "./style.scss";
 

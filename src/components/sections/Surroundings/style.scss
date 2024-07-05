@@ -4,7 +4,6 @@
 
   .wrap {
     @include flex(column, space-between, center);
-    padding: 50px 0;
   }
 
   .surroundings__title {
@@ -12,28 +11,37 @@
   }
 
   .surroundings__description {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     width: 80%;
     margin: 0 auto;
     margin-bottom: 30px;
     text-align: center;
     font-size: $font-size-title-mobile;
     line-height: 24px;
+
+    span {
+      display: block;
+      font: inherit;
+    }
+  }
+}
+
+@media screen and (max-width: $tablet-max-width) {
+  .surroundings {
+    .surroundings__description {
+      font-size: $font-size-subtitle-mobile;
+    }
   }
 }
 
 @media screen and (max-width: $mobile-max-width) {
   .surroundings {
-    margin-top: 50px;
-    padding-top: 40px;
-
-    &::before {
-      top: 40px;
-    }
+    margin-top: 60px;
 
     .wrap {
       @include flex(column, space-between, center);
-      padding: 20px 0;
     }
 
     .surroundings__title {
@@ -47,4 +55,3 @@
     }
   }
 }
-

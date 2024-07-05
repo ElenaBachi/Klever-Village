@@ -64,7 +64,10 @@
 
     .content {
       margin: 0;
+      padding: 10px 0;
       text-align: justify;
+      border-bottom: 0.5px solid $khaki-color;
+      border-top: 0.5px solid $khaki-color;
 
       h4 {
         text-align: center;

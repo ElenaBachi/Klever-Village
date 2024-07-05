@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import SurroundingItem from "../SurroundingItem/SurroundingItem";
 import { surroundings } from "../../../../../data";
-import "./style.scss";
 
 export default function SurroundingsList() {
   const [openId, setId] = useState(null);

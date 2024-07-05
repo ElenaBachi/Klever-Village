@@ -4,7 +4,6 @@
 
   .wrap {
     @include flex(column, space-between, center);
-    padding: 50px 0;
   }
 
   .activities__title {
@@ -12,13 +11,20 @@
   }
 
   .activities__description {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     width: 80%;
     margin: 0 auto;
     margin-bottom: 30px;
     text-align: center;
     font-size: $font-size-title-mobile;
     line-height: 24px;
+
+    span {
+      display: block;
+      font: inherit;
+    }
   }
 
   .activities__list {
@@ -29,14 +35,17 @@
   }
 }
 
+@media screen and (max-width: $tablet-max-width) {
+  .activities {
+    .activities__description {
+      font-size: $font-size-subtitle-mobile;
+    }
+  }
+}
+
 @media screen and (max-width: $mobile-max-width) {
   .activities {
-    margin-top: 50px;
-    padding-top: 40px;
-
-    &::before {
-      top: 40px;
-    }
+    margin-top: 60px;
 
     .activities__title {
       margin-bottom: $after-text-margin-mobile;

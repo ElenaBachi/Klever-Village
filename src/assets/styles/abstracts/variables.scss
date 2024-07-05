@@ -4,7 +4,7 @@ $greet-text-font-size: 50px;
 $greet-title-font-size-tablet: 75px;
 $greet-text-font-size-tablet: 35px;
 $greet-title-font-size-mobile: 40px;
-$greet-text-font-size-mobile: 20px;
+$greet-text-font-size-mobile: 26px;
 
 $font-size-link: 12px;
 $font-size-body-16: 16px;
@@ -12,16 +12,16 @@ $font-size-body-18: 18px;
 $font-size-subtitle: 30px;
 $font-size-title: 35px;
 
-$font-size-subtitle-mobile: 18px;
-$font-size-title-mobile: 21px;
+$font-size-subtitle-mobile: 20px;
+$font-size-title-mobile: 24px;
 
 $line-height-body: 20px;
 
 $light-font-weight: 200;
 
 //Margin
-$after-text-margin: 15px;
-$after-text-margin-mobile: 15px;
+$after-text-margin: 25px;
+$after-text-margin-mobile: 20px;
 
 // Colors
 $khaki-color: #52503b;
@@ -31,6 +31,6 @@ $beige-color: #faf8f0;
 $white-color: #ffffff;
 
 // Adaptive screen widths
-$mobile-max-width: 767px;
+$mobile-max-width: 768px;
 $tablet-max-width: 1439px;
 $gallery-adaptive-max-width: 1200px;

@@ -2,6 +2,18 @@
 @import "./abstracts/variables.scss";
 @import "./reset/reset.scss";
 
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 200;
+  font-display: fallback;
+  src: local("Montserrat"),
+    url("/src/assets/fonts/Montserrat.woff2")
+      format("woff2"),
+    url("/src/assets/fonts/Montserrat.woff")
+      format("woff");
+}
+
 #root {
   font-family: "Montserrat", sans-serif;
   font-weight: $light-font-weight;
@@ -16,7 +28,7 @@
 .wrap {
   width: 90%;
   @include margin(0, auto);
-  padding: 40px 0;
+  padding-top: 30px;
 }
 
 header nav {
@@ -38,7 +50,7 @@ h2 {
 
 h3,
 h4 {
-  margin-bottom: $after-text-margin;
+  margin-bottom: $after-text-margin-mobile;
 
   font-size: $font-size-subtitle;
   line-height: $font-size-subtitle;
@@ -57,12 +69,12 @@ button {
 section {
   position: relative;
 
-  @include padding(80px, 0);
+  @include padding(100px, 0);
 
   &::before {
     content: "";
     position: absolute;
-    top: 70px;
+    top: 100px;
     left: 50%;
     transform: translateX(-50%);
 
@@ -76,22 +88,6 @@ img {
   @include img(100%, 100%);
 }
 
-@media screen and (max-width: 1000px) {
-  section {
-    @include padding(50px, 0);
-
-    &::before {
-      top: 40px;
-
-      @include size(35px, 4px);
-    }
-  }
-
-  h2 {
-    margin-bottom: $after-text-margin-mobile;
-  }
-}
-
 @media screen and (max-width: 1200px) {
   header nav {
     font-size: $font-size-body-18;
@@ -100,8 +96,19 @@ img {
 
 @media screen and (max-width: $tablet-max-width) {
   .wrap {
-    padding: 20px 0;
-    padding-bottom: 0;
+    padding-top: 20px;
+  }
+
+  section {
+    @include padding(80px, 0);
+
+    &::before {
+      top: 80px;
+    }
+  }
+
+  h2 {
+    margin-bottom: $after-text-margin-mobile;
   }
 }
 
@@ -134,14 +141,12 @@ img {
   }
 
   section {
-    position: relative;
-
-    @include padding(25px, 0);
+    @include padding(50px, 0);
 
     &::before {
-      top: 22.5px;
+      top: 50px;
 
-      @include size(30px, 3px);
+      @include size(40px, 4px);
     }
   }
 }
