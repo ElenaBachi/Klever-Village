@@ -14,7 +14,7 @@ export default function ReviewsSlider() {
     slidesToScroll: 1,
     responsive: [
       {
-        breakpoint: 701,
+        breakpoint: 900,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
@@ -23,7 +23,7 @@ export default function ReviewsSlider() {
         },
       },
       {
-        breakpoint: 531,
+        breakpoint: 600,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
