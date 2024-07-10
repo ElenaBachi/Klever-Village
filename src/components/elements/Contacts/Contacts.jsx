@@ -34,6 +34,11 @@ export default function Contacts() {
           <VkIcon />
         </a>
       </li>
+      <li className="tel">
+        <a href="tel:+79812710703" className="tel-num">
+          Позвоните нам <br /> +7 981 271-07-03
+        </a>
+      </li>
     </ul>
   );
 }
