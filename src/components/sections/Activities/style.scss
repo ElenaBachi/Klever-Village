@@ -36,6 +36,10 @@
 
 @media screen and (max-width: $gallery-adaptive-max-width) {
   .activities {
+    .activities__description {
+      font-size: $font-size-subtitle-mobile;
+    }
+
     .activities__list {
       display: flex;
       flex-direction: column;

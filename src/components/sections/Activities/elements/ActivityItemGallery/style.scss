@@ -1,7 +1,12 @@
 .galery {
   @include size(45vw, 30vw);
-  padding: 15px;
+  padding: 8px;
   overflow: hidden;
+
+  & > img {
+    border-radius: 16px;
+  }
+
   .slider-container {
     @include size(100%, 100%);
 
@@ -14,14 +19,11 @@
       position: relative;
       @include size(100%, 100%);
       overflow: hidden;
+      border-radius: 16px;
     }
 
     .slick-slider div {
       @include size(100%, 100%);
-    }
-
-    img {
-      @include img(100%, 100%);
     }
 
     .slick-arrow {
@@ -69,9 +71,15 @@
   }
 }
 
-@media screen and (max-width: $gallery-adaptive-max-width) {
+@media screen and (orientation: portrait) and (max-width: $gallery-adaptive-max-width) {
   .galery {
     @include size(90vw, 55vh);
+  }
+}
+
+@media screen and (orientation: landscape) and (max-width: $gallery-adaptive-max-width) {
+  .galery {
+    @include size(90vw, 70vh);
   }
 }
 

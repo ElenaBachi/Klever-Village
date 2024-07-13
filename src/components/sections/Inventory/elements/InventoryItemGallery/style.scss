@@ -73,6 +73,12 @@
   }
 }
 
+@media screen and (orientation: landscape) and (max-width: $gallery-adaptive-max-width) {
+  .accommodation__galery {
+    @include size(100%, 80vh);
+  }
+}
+
 @media screen and (max-width: $gallery-adaptive-max-width) {
   .accommodation__galery {
     justify-self: center;
