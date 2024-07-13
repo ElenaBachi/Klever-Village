@@ -28,7 +28,7 @@ export const navigationItems = [
   {
     isSubnav: false,
     name: "Чем заняться",
-    href: "/#activities",
+    href: "/activities",
   },
   {
     isSubnav: false,
@@ -43,7 +43,7 @@ export const navigationItems = [
   {
     isSubnav: false,
     name: "Окрестности",
-    href: "/#surroundings",
+    href: "/surroundings",
   },
   {
     isSubnav: false,

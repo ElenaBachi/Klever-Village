@@ -43,13 +43,12 @@
     .book__btn {
       width: 100%;
       background-color: $khaki-color;
-
       color: $white-color;
     }
   }
 }
 
-@media screen and (max-width: $gallery-adaptive-max-width) {
+@media screen and (orientation: portrait) and (max-width: $gallery-adaptive-max-width) {
   .accommodation__item {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, auto);
