@@ -1,3 +1,18 @@
 .rules {
   background-color: $beige-color;
 }
+
+.modal-open-btn,
+.modal-close-btn {
+  font-size: $font-size-body-16;
+  color: $orange-color;
+  border-bottom: 0.5px solid $orange-color;
+}
+
+.modal-open-btn {
+  margin-top: 30px;
+}
+
+.modal-close-btn {
+  margin-bottom: 20px;
+}
