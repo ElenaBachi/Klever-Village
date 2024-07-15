@@ -36,6 +36,7 @@
   grid-row: 1 / 2;
 
   background-image: url("/images/gallery-2.jpg");
+  
 }
 
 .photo-3 {
@@ -51,6 +52,7 @@
   grid-row: 2 / 4;
 
   background-image: url("/images/gallery-4.jpg");
+  
 }
 
 .photo-5 {
@@ -58,7 +60,7 @@
   grid-row: 3 / 4;
 
   background-image: url("/images/gallery-5.jpg");
-  background-position: center bottom;
+  background-position: center bottom 5%;
 }
 
 @media screen and (max-width: $tablet-max-width) {

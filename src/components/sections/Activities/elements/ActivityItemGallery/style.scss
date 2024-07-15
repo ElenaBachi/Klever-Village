@@ -79,7 +79,7 @@
 
 @media screen and (orientation: landscape) and (max-width: $gallery-adaptive-max-width) {
   .galery {
-    @include size(90vw, 70vh);
+    @include size(90vw, 80vh);
   }
 }
 
