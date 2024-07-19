@@ -50,7 +50,7 @@ export default function InventoryItem(props) {
           </>
         )}
 
-        <BookButton />
+        <BookButton top={0}/>
       </div>
     </li>
   );

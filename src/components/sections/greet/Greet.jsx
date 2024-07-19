@@ -13,6 +13,20 @@ export default function Greet() {
           <p className="greet__text"> подальше от города - поближе к себе</p>
         </div>
       </div>
+
+      <div id="block-search">
+        <div id="tl-search-form" class="tl-container">
+          <noindex>
+            <a
+              href="https://www.travelline.ru/products/tl-hotel/"
+              rel="nofollow"
+              target="_blank"
+            >
+              TravelLine
+            </a>
+          </noindex>
+        </div>
+      </div>
     </section>
   );
 }

@@ -5,12 +5,12 @@ import BookButton from "../../elements/BookButton/BookButton";
 
 import "./style.scss";
 
-function Header() {
+function Header({href}) {
   return (
     <header className="header">
       <Logo />
       <Navigation />
-      <BookButton />
+      <BookButton href={href} top={300} />
     </header>
   );
 }

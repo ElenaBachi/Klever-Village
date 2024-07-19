@@ -1,12 +1,19 @@
 import "./style.scss";
-import { NavHashLink } from "react-router-hash-link";
 
-export default function BookButton() {
+export default function BookButton({top, href}) {
+  const scrollToTop = (top) => {
+    window.scrollTo({
+      top: top,
+      left: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <div className="book">
-      <NavHashLink className="book__btn" to={"/#greet"} smooth>
+      <a className="book__btn" href={href} onClick={() => scrollToTop(top)}>
         Забронировать
-      </NavHashLink>
+      </a>
     </div>
   );
 }
