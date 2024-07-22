@@ -101,10 +101,19 @@
   }
 }
 
+@media screen and (orientation: portrait) and (max-width: 767px) {
+  .greet {
+    line-height: $greet-text-font-size-mobile;
+    background: url("/images/background-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: 0 50px;
+  }
+}
+
 @media screen and (max-width: $mobile-max-width) {
   .greet {
     line-height: $greet-text-font-size-mobile;
-    opacity: 1;
 
     .greet__logo {
       @include size(180px, auto);
@@ -136,6 +145,26 @@
         width: 100%;
         animation: none;
       }
+    }
+  }
+}
+
+@media screen and (orientation: landscape) and (max-width: 1000px) {
+  .greet {
+    margin: 0;
+    padding: 0;
+    justify-content: flex-start;
+    height: fit-content;
+
+    .greet__logo {
+      display: none;
+    }
+
+    .container {
+      margin-top: 60px;
+      padding: 25px 0;
+      width: 100%;
+      transform: translateY(0);
     }
   }
 }
