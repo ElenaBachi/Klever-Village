@@ -2,6 +2,7 @@ import React from "react";
 import Greet from "../../sections/Greet/Greet";
 import About from "../..//sections/About/About";
 import Inventory from "../../sections/Inventory/Inventory";
+import Cafe from "../../sections/Cafe/Cafe";
 import Services from "../../sections/Services/Services";
 import Rules from "../../sections/Rules/Rules";
 import Extras from "../../sections/Extras/Extras";
@@ -17,6 +18,7 @@ function Main() {
       <Greet />
       <About />
       <Inventory />
+      <Cafe />
       <Services />
       <Rules />
       <Extras />

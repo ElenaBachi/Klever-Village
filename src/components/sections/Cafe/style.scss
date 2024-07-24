@@ -1,0 +1,98 @@
+.cafe {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100vw;
+  height: 90vh;
+  background-color: rgba($color: $dark-grey-color, $alpha: 0.3);
+  background: url("/images/cafe-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: $beige-color;
+  text-align: left;
+  font-size: 14px;
+
+  &::before {
+    content: none;
+  }
+
+  div {
+    padding: 20px;
+    padding-top: 0;
+  }
+
+  h4 {
+    line-height: $font-size-title-mobile;
+    font-size: $font-size-title-mobile;
+  }
+
+  .cafe-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+    padding: 20px;
+    background-color: rgba($color: $dark-grey-color, $alpha: 0.75);
+  }
+
+  .menu,
+  .kids-menu,
+  .working-hours {
+    border-bottom: 0.5px dotted $beige-color;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+
+  .menu,
+  .kids-menu {
+    ul li {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, auto);
+
+      .title {
+        font-size: 16px;
+      }
+
+      .price {
+        margin-left: 5vw;
+      }
+
+      .note {
+        margin-top: 10px;
+        grid-column: -1/1;
+      }
+    }
+  }
+
+  .working-hours {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 33%;
+    padding-top: 20px;
+    background-color: rgba($color: $dark-grey-color, $alpha: 0.75);
+    border: none;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      font-size: $font-size-body-16;
+    }
+
+    .title {
+      display: block;
+      margin-bottom: 10px;
+      font-size: $font-size-body-18;
+      color: $orange-color;
+    }
+  }
+}
