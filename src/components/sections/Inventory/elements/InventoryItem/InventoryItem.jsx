@@ -16,7 +16,7 @@ export default function InventoryItem(props) {
       ? accommodationOptions.map((option, index) => {
           return (
             <li key={index}>
-              {option.bed}
+              {option.title}
               <p className="accommodation__price">
                 стоимость <span>{option.price} &#8381;</span> в сутки
               </p>

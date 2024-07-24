@@ -1,67 +1,38 @@
-import React from "react";
+import React, { useState } from "react";
+import CafeContent from "./elements/CafeContent/CafeContent";
+import Modal from "../../elements/Modal/Modal";
 import { cafe } from "../../../data";
 import "./style.scss";
 
 export default function Cafe() {
+  const [modalActive, setModalActive] = useState(false);
+
   return (
     <section className="cafe" id="cafe">
-      <div className="cafe-content">
-        <h2>Кафе</h2>
+      <CafeContent />
 
-        <div className="menu">
-          <ul>
-            {cafe.menu.map((item) => {
-              return (
-                <li>
-                  <span className="title">{item.title}</span>
-                  <span className="price">{item.price}</span>
+      <div className="working-hours">
+        <h4>Время работы кафе</h4>
 
+        <ul>
+          {cafe.workingHours.map((item, index) => {
+            return (
+              <li key={index}>
+                <span className="title">{item.title}</span>
+
+                {item.description ? (
                   <ul className="note">
-                    {item.note ? item.note.map((item) => <li>{item}</li>) : ""}
+                    {item.description.map((item, index) => {
+                      return <li key={index}>{item}</li>;
+                    })}
                   </ul>
-                </li>
-              );
-            })}
-          </ul>
-        </div>
-
-        <div className="kids-menu">
-          <h4>Детское меню</h4>
-          <ul>
-            {cafe.kidsMenu.map((item) => {
-              return (
-                <li>
-                  <span lassName="title">{item.title}</span>
-                  <span className="price">{item.price}</span>
-                </li>
-              );
-            })}
-          </ul>
-        </div>
-
-        <div className="working-hours">
-          <h4>Время работы</h4>
-
-          <ul>
-            {cafe.workingHours.map((item) => {
-              return (
-                <li>
-                  <span className="title">{item.title}</span>
-
-                  <ul className="note">
-                    {item.description
-                      ? item.description.map((item) => <li>{item}</li>)
-                      : ""}
-                  </ul>
-                </li>
-              );
-            })}
-          </ul>
-        </div>
-
-        <div className="menu-extras">
-          <p>Вне времени приема пищи гости могут купить выпечку, кофе/ чай</p>
-        </div>
+                ) : (
+                  ""
+                )}
+              </li>
+            );
+          })}
+        </ul>
       </div>
     </section>
   );
