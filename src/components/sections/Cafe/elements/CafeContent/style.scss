@@ -1,0 +1,112 @@
+.cafe-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  max-height: 100%;
+  overflow-y: scroll;
+  padding: 20px;
+  background-color: rgba($color: $dark-grey-color, $alpha: 0.75);
+
+  div:has(svg) {
+    position: absolute;
+    top: 0;
+    left: 20px;
+  }
+}
+
+.menu,
+.kids-menu,
+.working-hours,
+.menu-extras {
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+.menu,
+.kids-menu,
+.menu-extras {
+  ul li {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+
+    .title {
+      font-size: 16px;
+    }
+
+    .price {
+      margin-left: 5vw;
+    }
+
+    .note {
+      margin-top: 10px;
+      grid-column: -1/1;
+    }
+  }
+}
+
+.kids-menu {
+  border-top: 0.5px dotted $beige-color;
+  border-bottom: 0.5px dotted $beige-color;
+}
+
+.menu-extras {
+  p {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: $mobile-max-width) {
+  .cafe-content {
+    margin: 10px;
+    padding: 15px;
+    max-height: 90%;
+  }
+
+  .menu {
+    grid-row: 2/4;
+  }
+
+  .menu,
+  .kids-menu,
+  .working-hours,
+  .menu-extras {
+    ul {
+      gap: 15px;
+    }
+  }
+
+  .kids-menu {
+    border: none;
+  }
+
+  .menu-extras {
+    p {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .cafe-content {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  .menu,
+  .kids-menu,
+  .menu-extras {
+    ul li {
+      .price {
+        margin-left: 0;
+        justify-self: end;
+        text-align: right;
+      }
+    }
+  }
+}

@@ -1,13 +1,12 @@
 .cafe {
-  position: relative;
   display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
+  flex-direction: row-reverse;
+  justify-content: space-between;
   align-items: center;
   width: 100vw;
   height: 90vh;
   background-color: rgba($color: $dark-grey-color, $alpha: 0.3);
-  background: url("/images/cafe-1.jpg");
+  background: url("/images/cafe.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   color: $beige-color;
@@ -20,7 +19,11 @@
 
   div {
     padding: 20px;
-    padding-top: 0;
+  }
+
+  h2 {
+    margin: 0;
+    padding: 0;
   }
 
   h4 {
@@ -28,55 +31,8 @@
     font-size: $font-size-title-mobile;
   }
 
-  .cafe-content {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    width: 50%;
-    padding: 20px;
-    background-color: rgba($color: $dark-grey-color, $alpha: 0.75);
-  }
-
-  .menu,
-  .kids-menu,
   .working-hours {
-    border-bottom: 0.5px dotted $beige-color;
-
-    ul {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-  }
-
-  .menu,
-  .kids-menu {
-    ul li {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(2, auto);
-
-      .title {
-        font-size: 16px;
-      }
-
-      .price {
-        margin-left: 5vw;
-      }
-
-      .note {
-        margin-top: 10px;
-        grid-column: -1/1;
-      }
-    }
-  }
-
-  .working-hours {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    width: 33%;
+    width: 30%;
     padding-top: 20px;
     background-color: rgba($color: $dark-grey-color, $alpha: 0.75);
     border: none;
@@ -93,6 +49,57 @@
       margin-bottom: 10px;
       font-size: $font-size-body-18;
       color: $orange-color;
+    }
+  }
+}
+
+@media screen and (max-width: $mobile-max-width) {
+  .cafe {
+    align-items: flex-start;
+    height: 90vh;
+    padding: 0;
+
+    div {
+      padding: 15px;
+    }
+
+    h2 {
+      grid-column: -1/1;
+      margin-bottom: 20px;
+    }
+
+    h4 {
+      line-height: $font-size-body-18;
+      font-size: $font-size-body-18;
+    }
+
+    .working-hours {
+      width: fit-content;
+      padding: 15px;
+      margin: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .cafe {
+    flex-direction: column-reverse;
+    gap: 10px;
+
+    div {
+      padding: 10px;
+    }
+
+    .working-hours {
+      width: 100%;
+      padding: 20px;
+      margin: 0;
+
+      & > ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
     }
   }
 }
