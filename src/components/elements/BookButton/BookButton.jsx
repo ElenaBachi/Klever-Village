@@ -1,17 +1,9 @@
 import "./style.scss";
 
-export default function BookButton({top, href}) {
-  const scrollToTop = (top) => {
-    window.scrollTo({
-      top: top,
-      left: 0,
-      behavior: "smooth",
-    });
-  };
-
+export default function BookButton() {
   return (
     <div className="book">
-      <a className="book__btn" href={href} onClick={() => scrollToTop(top)}>
+      <a className="book__btn" href="booking.html" target="_blank">
         Забронировать
       </a>
     </div>

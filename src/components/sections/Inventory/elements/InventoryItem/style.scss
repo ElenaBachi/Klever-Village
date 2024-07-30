@@ -27,23 +27,28 @@
     }
   }
 
-  .accommodation__price {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+  .accommodation__price,
+  .accommodation__price--big-house {
     margin-top: 20px;
 
     p {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      gap: 15px;
       line-height: 22px;
     }
 
     span {
-      display: block;
       font-size: $font-size-body-18;
+    }
+  }
+
+  .accommodation__price {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    p {
+      display: grid;
+      grid-template-columns: 3fr 1fr;
+      gap: 50px;
     }
   }
 

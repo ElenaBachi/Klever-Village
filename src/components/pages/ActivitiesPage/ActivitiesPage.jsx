@@ -6,7 +6,7 @@ import Activities from "../../sections/Activities/Activities";
 export default function ActivitiesPage() {
   return (
     <>
-      <Header href={"/booking"} />
+      <Header />
       <Activities link={"/activities"} />
       <Footer />
     </>
