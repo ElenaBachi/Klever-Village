@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="apple-touch-icon" href="faviconapple.svg" />
+    <link rel="stylesheet" href="booking.scss" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Klever Village</title>
+    <style>
+      #tl-booking-form {
+        width: 100%;
+        max-width: 1440px;
+        margin: 0 auto;
+        z-index: 0;
+      }
+    </style>
+    
+    <script type="text/javascript">
+      (function (w) {
+        var q = [
+          ["setContext", "TL-INT-cleverspb-com_2024-07-01", "ru"],
+          [
+            "embed",
+            "booking-form",
+            {
+              container: "tl-booking-form",
+            },
+          ],
+          [
+            "embed",
+            "search-form",
+            {
+              container: "tl-search-form",
+            },
+          ],
+        ];
+        var h = [
+          "ru-ibe.tlintegration.ru",
+          "ibe.tlintegration.ru",
+          "ibe.tlintegration.com",
+        ];
+        var t = (w.travelline = w.travelline || {}),
+          ti = (t.integration = t.integration || {});
+        ti.__cq = ti.__cq ? ti.__cq.concat(q) : q;
+        if (!ti.__loader) {
+          ti.__loader = true;
+          var d = w.document,
+            c =
+              d.getElementsByTagName("head")[0] ||
+              d.getElementsByTagName("body")[0];
+          function e(s, f) {
+            return function () {
+              w.TL || (c.removeChild(s), f());
+            };
+          }
+          (function l(h) {
+            if (0 === h.length) return;
+            var s = d.createElement("script");
+            s.type = "text/javascript";
+            s.async = !0;
+            s.src = "https://" + h[0] + "/integration/loader.js";
+            s.onerror = s.onload = e(s, function () {
+              l(h.slice(1, h.length));
+            });
+            c.appendChild(s);
+          })(h);
+        }
+      })(window);
+    </script>
+  </head>
+
+  <body>
+    <div id="tl-booking-form"></div>
+  </body>
+</html>

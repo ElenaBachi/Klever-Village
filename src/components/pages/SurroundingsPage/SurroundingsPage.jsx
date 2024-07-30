@@ -6,7 +6,7 @@ import Surroundings from "../../sections/Surroundings/Surroundings";
 export default function SurroundingsPage() {
   return (
     <>
-      <Header href={"/booking"} />
+      <Header />
       <Surroundings />
       <Footer />
     </>

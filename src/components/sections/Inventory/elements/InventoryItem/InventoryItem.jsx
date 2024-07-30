@@ -12,20 +12,6 @@ export default function InventoryItem(props) {
     return <li key={index}>{option}</li>;
   });
 
-  // const accommodationOptionsList =
-  //   accommodationOptions.length > 0
-  //     ? accommodationOptions.map((option, index) => {
-  //         return (
-  //           <li key={index}>
-  //             {option.title}
-  //             <p className="accommodation__price">
-  //               стоимость <span>{option.price} &#8381;</span> в сутки
-  //             </p>
-  //           </li>
-  //         );
-  //       })
-  //     : "";
-
   return (
     <li className="accommodation__item">
       <InventoryItemGallery {...props} />
@@ -45,29 +31,34 @@ export default function InventoryItem(props) {
                   })
                 : ""}
             </ul>
+
+            <div className="accommodation__price">
+              {prices.map((price) => {
+                return (
+                  <p>
+                    {price.title} <span>{price.price}&#8381; в сутки</span>
+                  </p>
+                );
+              })}
+            </div>
           </>
         ) : (
-          <>
-            {/* <p className="accommodation__price">
-              Стоимость <span>{accommodationOptions.price} &#8381;</span> в
-              сутки
-            </p> */}
-          </>
+          <div className="accommodation__price--big-house">
+            {prices.map((price) => {
+              return (
+                <p>
+                  Стоимость проживания <span>{price.price}&#8381; в сутки</span>
+                </p>
+              );
+            })}
+          </div>
         )}
 
-        <div className="accommodation__price">
-          {prices.map((price) => {
-            return (
-              <p>
-                {price.title} <span>{price.price} &#8381; в сутки</span>
-              </p>
-            );
-          })}
-        </div>
+        <p className="accommodation__note">
+          Завтрак включен в стоимость проживания
+        </p>
 
-        <p className="accommodation__note">Завтрак включен в стоимость проживания</p>
-
-        <BookButton top={0} />
+        <BookButton />
       </div>
     </li>
   );
